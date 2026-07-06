@@ -1,6 +1,5 @@
 "use client";
 
-import NextLink from "next/link";
 import { Menu } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
@@ -20,19 +19,11 @@ interface NavItem {
 
 interface MobileNavProps {
   navItems: NavItem[];
-  loginLabel: string;
-  loginHref: string;
   menuLabel: string;
   siteName: string;
 }
 
-export function MobileNav({
-  navItems,
-  loginLabel,
-  loginHref,
-  menuLabel,
-  siteName,
-}: MobileNavProps) {
+export function MobileNav({ navItems, menuLabel, siteName }: MobileNavProps) {
   return (
     <Sheet>
       <SheetTrigger
@@ -61,17 +52,6 @@ export function MobileNav({
               {item.label}
             </SheetClose>
           ))}
-          <SheetClose
-            nativeButton={false}
-            render={
-              <NextLink
-                href={loginHref}
-                className="rounded-md px-2 py-2 text-sm font-medium text-muted-foreground hover:bg-muted"
-              />
-            }
-          >
-            {loginLabel}
-          </SheetClose>
         </nav>
       </SheetContent>
     </Sheet>

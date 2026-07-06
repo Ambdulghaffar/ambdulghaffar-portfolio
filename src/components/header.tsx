@@ -1,8 +1,5 @@
-import NextLink from "next/link";
 import { getTranslations } from "next-intl/server";
-import { LogIn } from "lucide-react";
 
-import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { LanguageToggle } from "@/components/language-toggle";
 import { MobileNav } from "@/components/mobile-nav";
@@ -46,23 +43,7 @@ export async function Header({ locale }: { locale: Locale }) {
         <div className="flex items-center gap-1">
           <ThemeToggle label={c("toggleTheme")} />
           <LanguageToggle locale={locale} label={c("toggleLanguage")} />
-          <Button
-            variant="ghost"
-            size="icon"
-            className="hidden sm:inline-flex"
-            aria-label={t("login")}
-            nativeButton={false}
-            render={<NextLink href="/admin/login" aria-label={t("login")} />}
-          >
-            <LogIn className="size-4" />
-          </Button>
-          <MobileNav
-            navItems={navItems}
-            loginLabel={t("login")}
-            loginHref="/admin/login"
-            menuLabel={c("menu")}
-            siteName={data.name}
-          />
+          <MobileNav navItems={navItems} menuLabel={c("menu")} siteName={data.name} />
         </div>
       </div>
     </header>

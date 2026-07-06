@@ -5,8 +5,7 @@
     "stack": "Stack",
     "projects": "Projects",
     "experience": "Experience",
-    "contact": "Contact",
-    "login": "Login"
+    "contact": "Contact"
   },
   "Hero": {
     "viewProjects": "View my projects",
