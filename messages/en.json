@@ -1,0 +1,57 @@
+{
+  "Nav": {
+    "home": "Home",
+    "about": "About",
+    "stack": "Stack",
+    "projects": "Projects",
+    "experience": "Experience",
+    "contact": "Contact",
+    "login": "Login"
+  },
+  "Hero": {
+    "viewProjects": "View my projects",
+    "downloadCv": "Download my CV"
+  },
+  "Stack": {
+    "title": "Tech Stack",
+    "subtitle": "Technologies and tools I use daily"
+  },
+  "About": {
+    "title": "About",
+    "subtitle": "Who I am and what drives me",
+    "projectsCount": "Projects",
+    "experienceCount": "Experiences",
+    "stackCount": "Skill categories"
+  },
+  "Projects": {
+    "title": "Projects",
+    "subtitle": "A selection of projects I've worked on",
+    "viewProject": "View project",
+    "viewCode": "Source code"
+  },
+  "Experience": {
+    "title": "Experience",
+    "subtitle": "My professional and volunteer journey",
+    "education": "Education",
+    "educationSubtitle": "My academic background"
+  },
+  "Contact": {
+    "title": "Contact",
+    "subtitle": "A question, an opportunity? Get in touch",
+    "name": "Name",
+    "namePlaceholder": "Your name",
+    "email": "Email",
+    "emailPlaceholder": "you@example.com",
+    "message": "Message",
+    "messagePlaceholder": "Your message...",
+    "send": "Send"
+  },
+  "Footer": {
+    "rights": "All rights reserved."
+  },
+  "Common": {
+    "toggleTheme": "Toggle theme",
+    "toggleLanguage": "Toggle language",
+    "menu": "Menu"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s http://localhost:3001/)",
+      "Read(//tmp/**)",
+      "Bash(curl -s -o /dev/null -w \"admin: %{http_code}\\\\n\" http://localhost:3001/admin)",
+      "Bash(curl -sI http://localhost:3001/admin)",
+      "Bash(curl -s http://localhost:3001/en)",
+      "Bash(npx eslint *)",
+      "Bash(taskkill //F //IM node.exe //FI \"WINDOWTITLE eq *next*\")",
+      "Bash(pkill -f \"next dev\")",
+      "Bash(netstat -ano)"
+    ]
+  }
+}

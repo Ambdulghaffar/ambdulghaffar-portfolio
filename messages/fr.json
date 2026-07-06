@@ -1,0 +1,57 @@
+{
+  "Nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "stack": "Stack",
+    "projects": "Projets",
+    "experience": "Expérience",
+    "contact": "Contact",
+    "login": "Connexion"
+  },
+  "Hero": {
+    "viewProjects": "Voir mes projets",
+    "downloadCv": "Télécharger mon CV"
+  },
+  "Stack": {
+    "title": "Stack technique",
+    "subtitle": "Les technologies et outils que j'utilise au quotidien"
+  },
+  "About": {
+    "title": "À propos",
+    "subtitle": "Qui je suis et ce qui me motive",
+    "projectsCount": "Projets",
+    "experienceCount": "Expériences",
+    "stackCount": "Catégories de compétences"
+  },
+  "Projects": {
+    "title": "Projets",
+    "subtitle": "Une sélection de projets sur lesquels j'ai travaillé",
+    "viewProject": "Voir le projet",
+    "viewCode": "Code source"
+  },
+  "Experience": {
+    "title": "Expérience",
+    "subtitle": "Mon parcours professionnel et associatif",
+    "education": "Formation",
+    "educationSubtitle": "Mon parcours académique"
+  },
+  "Contact": {
+    "title": "Contact",
+    "subtitle": "Une question, une opportunité ? Écrivez-moi",
+    "name": "Nom",
+    "namePlaceholder": "Votre nom",
+    "email": "Email",
+    "emailPlaceholder": "vous@exemple.com",
+    "message": "Message",
+    "messagePlaceholder": "Votre message...",
+    "send": "Envoyer"
+  },
+  "Footer": {
+    "rights": "Tous droits réservés."
+  },
+  "Common": {
+    "toggleTheme": "Changer de thème",
+    "toggleLanguage": "Changer de langue",
+    "menu": "Menu"
+  }
+}
