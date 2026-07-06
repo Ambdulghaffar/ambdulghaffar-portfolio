@@ -1,0 +1,106 @@
+[
+  {
+    "id": "rilygo-v2",
+    "title": { "fr": "RiLyGo V2", "en": "RiLyGo V2" },
+    "status": { "fr": "Stage PFE", "en": "Internship (final year)" },
+    "description": {
+      "fr": "Plateforme de mise en relation entre automobilistes et prestataires de services automobiles au Maroc, intégrant un moteur de dispatch intelligent (Relayer AI). Contribution backend : moteur de scoring multi-critères, pattern Transactional Outbox avec Kafka, géolocalisation, notifications FCM. Contribution mobile : application multi-profil (Client, Garage, Employé), authentification, GPS tracking, chat.",
+      "en": "Platform connecting drivers with automotive service providers in Morocco, featuring an intelligent dispatch engine (Relayer AI). Backend contribution: multi-criteria scoring engine, Transactional Outbox pattern with Kafka, geolocation, FCM notifications. Mobile contribution: multi-profile app (Client, Garage, Employee), authentication, GPS tracking, chat."
+    },
+    "stack": ["Spring Boot", "Java 21", "PostgreSQL", "PostGIS", "Kafka", "Firebase", "Flutter", "Dart", "Riverpod", "Docker", "JWT"],
+    "githubUrl": "",
+    "liveUrl": "",
+    "featured": true
+  },
+  {
+    "id": "gestion-stock",
+    "title": { "fr": "Application Fullstack de Gestion de Stock", "en": "Fullstack Stock Management App" },
+    "status": { "fr": "En cours", "en": "In progress" },
+    "description": {
+      "fr": "Frontend en architecture feature-based, backend en Clean Architecture avec pattern DTO. Authentification sécurisée et gestion complète des stocks.",
+      "en": "Feature-based frontend architecture, Clean Architecture backend with DTO pattern. Secure authentication and complete stock management."
+    },
+    "stack": ["Next.js", "TypeScript", "Tailwind CSS", "Shadcn/UI", "NextAuth.js", "Spring Boot", "Spring Security", "JWT", "JPA/Hibernate", "PostgreSQL"],
+    "githubUrl": "",
+    "liveUrl": "",
+    "featured": true
+  },
+  {
+    "id": "nutrition-app",
+    "title": { "fr": "Application de nutrition", "en": "Nutrition tracking app" },
+    "status": { "fr": "En cours", "en": "In progress" },
+    "description": {
+      "fr": "Application web complète de suivi nutritionnel avec interface moderne.",
+      "en": "Complete web application for nutrition tracking with a modern interface."
+    },
+    "stack": ["React.js", "Next.js", "TypeScript", "Tailwind", "Shadcn UI"],
+    "githubUrl": "",
+    "liveUrl": "",
+    "featured": false
+  },
+  {
+    "id": "chatbot-investigation",
+    "title": { "fr": "Chatbot d'Investigation : Dialogue LLM", "en": "Investigation Chatbot: LLM Dialogue" },
+    "status": { "fr": "Projet académique", "en": "Academic project" },
+    "description": {
+      "fr": "Agent conversationnel (LLM) menant une enquête interactive pour valider des transactions et détecter la fraude.",
+      "en": "Conversational agent (LLM) conducting an interactive investigation to validate transactions and detect fraud."
+    },
+    "stack": ["Python", "Streamlit", "PyTorch", "ML", "IA Générative (LLMs)"],
+    "githubUrl": "",
+    "liveUrl": "",
+    "featured": false
+  },
+  {
+    "id": "cv-analyzer",
+    "title": { "fr": "Analyseur intelligent de CVs (IA)", "en": "Smart CV Analyzer (AI)" },
+    "status": { "fr": "En cours", "en": "In progress" },
+    "description": {
+      "fr": "Outil d'analyse et de parsing de CVs propulsé par l'intelligence artificielle.",
+      "en": "AI-powered CV parsing and analysis tool."
+    },
+    "stack": ["Python", "Streamlit", "LLM (Groq API)"],
+    "githubUrl": "",
+    "liveUrl": "",
+    "featured": false
+  },
+  {
+    "id": "rdv-medical",
+    "title": { "fr": "Gestion de rendez-vous médical", "en": "Medical appointment management" },
+    "status": { "fr": "PFE Licence", "en": "Bachelor's final project" },
+    "description": {
+      "fr": "Plateforme de prise de rendez-vous en ligne entre patients et médecins.",
+      "en": "Online appointment booking platform between patients and doctors."
+    },
+    "stack": ["Laravel", "Bootstrap", "UML"],
+    "githubUrl": "",
+    "liveUrl": "",
+    "featured": false
+  },
+  {
+    "id": "restaurant-management",
+    "title": { "fr": "Gestion de restaurant en ligne", "en": "Online restaurant management" },
+    "status": { "fr": "Projet personnel", "en": "Personal project" },
+    "description": {
+      "fr": "Interface dynamique SPA pour la gestion des commandes et menus.",
+      "en": "Dynamic SPA interface for managing orders and menus."
+    },
+    "stack": ["React"],
+    "githubUrl": "",
+    "liveUrl": "",
+    "featured": false
+  },
+  {
+    "id": "school-management",
+    "title": { "fr": "Application de gestion d'école", "en": "School management application" },
+    "status": { "fr": "Projet académique", "en": "Academic project" },
+    "description": {
+      "fr": "Système administratif pour le suivi des élèves et des cours.",
+      "en": "Administrative system for tracking students and courses."
+    },
+    "stack": ["Django", "Python", "Bootstrap"],
+    "githubUrl": "",
+    "liveUrl": "",
+    "featured": false
+  }
+]

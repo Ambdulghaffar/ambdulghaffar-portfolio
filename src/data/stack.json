@@ -1,0 +1,32 @@
+[
+  {
+    "id": "frontend",
+    "category": { "fr": "Frontend", "en": "Frontend" },
+    "items": ["ReactJS", "Next.js", "TypeScript", "Tailwind CSS", "Bootstrap", "Shadcn UI", "HTML/CSS", "JavaScript"]
+  },
+  {
+    "id": "backend",
+    "category": { "fr": "Backend & Scripting", "en": "Backend & Scripting" },
+    "items": ["Laravel", "PHP", "Spring Boot", "Java", "Django", "Python", "LaTeX (PDF Generation)"]
+  },
+  {
+    "id": "ai-ml",
+    "category": { "fr": "IA & Machine Learning", "en": "AI & Machine Learning" },
+    "items": ["Scikit-learn", "PyTorch", "Classification", "Régression", "Clustering", "LLMs (Groq API)", "Streamlit"]
+  },
+  {
+    "id": "database-auth",
+    "category": { "fr": "Bases de données & Auth", "en": "Databases & Auth" },
+    "items": ["PostgreSQL", "MySQL", "SQLite", "Keycloak", "NextAuth", "JWT"]
+  },
+  {
+    "id": "tools",
+    "category": { "fr": "Outils & Conception", "en": "Tools & Design" },
+    "items": ["Git & GitHub", "Postman", "Jira", "UML", "Docker"]
+  },
+  {
+    "id": "mobile",
+    "category": { "fr": "Mobile", "en": "Mobile" },
+    "items": ["Flutter", "Dart", "Riverpod", "Clean Architecture"]
+  }
+]

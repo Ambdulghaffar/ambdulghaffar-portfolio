@@ -1,0 +1,31 @@
+{
+  "name": "Ambdulghaffar Ahamadi",
+  "initials": "AA",
+  "title": {
+    "fr": "Développeur Fullstack & IA",
+    "en": "Fullstack & AI Developer"
+  },
+  "tagline": {
+    "fr": "Bonjour, je suis Ambdulghaffar",
+    "en": "Hello, I'm Ambdulghaffar"
+  },
+  "bio": {
+    "fr": "Développeur Fullstack en Master Qualité du Logiciel, avec une expertise en développement d'applications web modernes (Spring Boot, Next.js) et un fort intérêt pour l'Intelligence Artificielle. Je conçois des solutions complètes intégrant Machine Learning et LLM afin d'apporter des fonctionnalités intelligentes et à forte valeur ajoutée. Rigoureux et orienté architecture, je m'inscris dans une démarche de développement de logiciels performants, scalables et centrés utilisateur.",
+    "en": "Fullstack developer pursuing a Master's in Software Quality Engineering, with expertise in modern web application development (Spring Boot, Next.js) and a strong interest in Artificial Intelligence. I design complete solutions integrating Machine Learning and LLMs to deliver intelligent, high-value features. Rigorous and architecture-oriented, I'm committed to building performant, scalable, and user-centered software."
+  },
+  "location": {
+    "fr": "Tétouan, Maroc",
+    "en": "Tétouan, Morocco"
+  },
+  "email": "elhaffarahamadi@gmail.com",
+  "phone": "+212 632888924",
+  "availability": {
+    "fr": "À l'écoute de nouvelles opportunités",
+    "en": "Open to new opportunities"
+  },
+  "socials": {
+    "linkedin": "https://www.linkedin.com/in/ambdulghaffar-ahamadi-7a476839a/",
+    "github": "https://github.com/ambdulghaffar"
+  },
+  "cvUrl": "/cv/Ambdulghaffar-Ahamadi-CV.pdf"
+}

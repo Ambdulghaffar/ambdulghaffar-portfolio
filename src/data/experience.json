@@ -1,0 +1,44 @@
+[
+  {
+    "id": "sb-solutions",
+    "company": "S B SOLUTIONS MA",
+    "role": { "fr": "Développeur Full-Stack — Backend Spring Boot & Mobile Flutter", "en": "Full-Stack Developer — Spring Boot Backend & Flutter Mobile" },
+    "contractType": { "fr": "Stage", "en": "Internship" },
+    "location": { "fr": "Tétouan, Maroc", "en": "Tétouan, Morocco" },
+    "period": { "fr": "Janv. 2026 - Juin 2026 · 6 mois", "en": "Jan 2026 - Jun 2026 · 6 months" },
+    "bullets": {
+      "fr": [
+        "Développement de RiLyGo V2, plateforme de mise en relation automobilistes/prestataires avec moteur de dispatch intelligent (Relayer AI).",
+        "Backend : moteur de scoring multi-critères, pattern Transactional Outbox avec Apache Kafka, documentation API REST Swagger/OpenAPI 3.1, géolocalisation, notifications FCM.",
+        "Mobile : application multi-profil (Client, Garage, Employé) en Flutter, authentification Email + Google OAuth2, GPS tracking, chat."
+      ],
+      "en": [
+        "Developed RiLyGo V2, a platform connecting drivers and automotive service providers with an intelligent dispatch engine (Relayer AI).",
+        "Backend: multi-criteria scoring engine, Transactional Outbox pattern with Apache Kafka, Swagger/OpenAPI 3.1 REST documentation, geolocation, FCM notifications.",
+        "Mobile: multi-profile Flutter app (Client, Garage, Employee), Email + Google OAuth2 authentication, GPS tracking, chat."
+      ]
+    }
+  },
+  {
+    "id": "ace-maroc",
+    "company": "Association Des Comoriens Étudiants Au Maroc",
+    "role": { "fr": "Contrôleur Général", "en": "General Controller" },
+    "location": { "fr": "Tétouan, Maroc", "en": "Tétouan, Morocco" },
+    "contractType": { "fr": "Bénévolat associatif", "en": "Volunteer association work" },
+    "period": { "fr": "2023 - 2025", "en": "2023 - 2025" },
+    "bullets": {
+      "fr": [
+        "Participation à des réunions, dépôt et suivi des dossiers pour les demandes d'aides.",
+        "Supervision des multiples opérations et achats pour les événements associatifs.",
+        "Coordination des travaux afin d'atteindre les objectifs annuels.",
+        "Élaboration de rapports financiers précis pour chaque évènement."
+      ],
+      "en": [
+        "Participated in meetings, filed and tracked aid request applications.",
+        "Supervised multiple operations and purchases for association events.",
+        "Coordinated efforts to meet annual goals.",
+        "Prepared accurate financial reports for each event."
+      ]
+    }
+  }
+]

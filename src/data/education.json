@@ -1,0 +1,23 @@
+[
+  {
+    "id": "master-qualite-logiciel",
+    "degree": { "fr": "Master Qualité Du Logiciel", "en": "Master's in Software Quality Engineering" },
+    "institution": "Université Abdelmalek Essaâdi",
+    "detail": { "fr": "Faculté Des Sciences De Tétouan", "en": "Faculty of Sciences, Tétouan" },
+    "period": { "fr": "2024 - en cours", "en": "2024 - present" }
+  },
+  {
+    "id": "licence-maths-info",
+    "degree": { "fr": "Licence Sciences Mathématiques Et Informatique", "en": "Bachelor's in Mathematics and Computer Science" },
+    "institution": "Université Abdelmalek Essaâdi",
+    "detail": { "fr": "Faculté Des Sciences De Tétouan", "en": "Faculty of Sciences, Tétouan" },
+    "period": "2021 - 2024"
+  },
+  {
+    "id": "bac-scientifique",
+    "degree": { "fr": "Baccalauréat (Scientifique - Série C)", "en": "High School Diploma (Science track)" },
+    "institution": "Lycée Bamabo Mtruni",
+    "detail": { "fr": "Tsembéhou, Comores", "en": "Tsembéhou, Comoros" },
+    "period": "2020 - 2021"
+  }
+]
