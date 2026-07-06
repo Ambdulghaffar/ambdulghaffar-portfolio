@@ -51,6 +51,7 @@ export interface Project {
   stack: string[];
   image: string;
   links: ProjectLink[];
+  videoUrl?: string;
   featured: boolean;
 }
 

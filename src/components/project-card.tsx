@@ -1,4 +1,4 @@
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Play } from "lucide-react";
 
 import { GitHubIcon } from "@/components/icons";
 import { ProjectImage } from "@/components/project-image";
@@ -12,16 +12,26 @@ import {
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import {
+  Dialog,
+  DialogTrigger,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
 import { TechBadge } from "@/components/tech-badge";
 import type { Locale, Project } from "@/types";
 
 interface ProjectCardProps {
   project: Project;
   locale: Locale;
+  watchDemoLabel: string;
 }
 
-export function ProjectCard({ project, locale }: ProjectCardProps) {
+export function ProjectCard({ project, locale, watchDemoLabel }: ProjectCardProps) {
   const links = project.links.filter((link) => link.url.trim() !== "");
+  const hasVideo = Boolean(project.videoUrl && project.videoUrl.trim() !== "");
+  const buttonCount = links.length + (hasVideo ? 1 : 0);
 
   return (
     <Card className="h-full">
@@ -40,9 +50,9 @@ export function ProjectCard({ project, locale }: ProjectCardProps) {
           <TechBadge key={tech} label={tech} />
         ))}
       </CardContent>
-      {links.length > 0 && (
+      {buttonCount > 0 && (
         <CardFooter
-          className={`flex flex-wrap gap-2 ${links.length === 1 ? "justify-center" : ""}`}
+          className={`flex flex-wrap gap-2 ${buttonCount === 1 ? "justify-center" : ""}`}
         >
           {links.map((link) => (
             <Button
@@ -67,6 +77,28 @@ export function ProjectCard({ project, locale }: ProjectCardProps) {
               {link.label[locale]}
             </Button>
           ))}
+          {hasVideo && (
+            <Dialog>
+              <DialogTrigger render={<Button variant="outline" size="sm" />}>
+                <Play data-icon="inline-start" />
+                {watchDemoLabel}
+              </DialogTrigger>
+              <DialogContent className="sm:max-w-2xl lg:max-w-3xl">
+                <DialogHeader>
+                  <DialogTitle>{project.title[locale]}</DialogTitle>
+                </DialogHeader>
+                <div className="aspect-video w-full overflow-hidden rounded-lg bg-black">
+                  <video
+                    src={project.videoUrl}
+                    controls
+                    autoPlay
+                    muted={false}
+                    className="size-full"
+                  />
+                </div>
+              </DialogContent>
+            </Dialog>
+          )}
         </CardFooter>
       )}
     </Card>

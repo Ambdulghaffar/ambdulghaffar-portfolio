@@ -24,7 +24,8 @@
   },
   "Projects": {
     "title": "Projects",
-    "subtitle": "A selection of projects I've worked on"
+    "subtitle": "A selection of projects I've worked on",
+    "watchDemo": "Watch the demo"
   },
   "Experience": {
     "title": "Experience",
