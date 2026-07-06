@@ -1,7 +1,7 @@
 [
   {
     "id": "sb-solutions",
-    "company": "S B SOLUTIONS MA",
+    "company": "S B SOLUTIONS MA & DEV MAROC",
     "role": { "fr": "Développeur Full-Stack — Backend Spring Boot & Mobile Flutter", "en": "Full-Stack Developer — Spring Boot Backend & Flutter Mobile" },
     "contractType": { "fr": "Stage", "en": "Internship" },
     "location": { "fr": "Tétouan, Maroc", "en": "Tétouan, Morocco" },
@@ -22,7 +22,7 @@
   {
     "id": "ace-maroc",
     "company": "Association Des Comoriens Étudiants Au Maroc",
-    "role": { "fr": "Contrôleur Général", "en": "General Controller" },
+    "role": { "fr": "Contrôleur Général - Section de Téouan", "en": "General Controller - Section of Téouan" },
     "location": { "fr": "Tétouan, Maroc", "en": "Tétouan, Morocco" },
     "contractType": { "fr": "Bénévolat associatif", "en": "Volunteer association work" },
     "period": { "fr": "2023 - 2025", "en": "2023 - 2025" },

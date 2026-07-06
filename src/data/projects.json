@@ -75,7 +75,7 @@
     "stack": ["Python", "Streamlit", "LLM (Groq API)"],
     "image": "/images/projects/cv-analyzer.png",
     "links": [
-      { "type": "github", "label": { "fr": "Voir le code", "en": "View code" }, "url": "" }
+      { "type": "github", "label": { "fr": "Voir le code", "en": "View code" }, "url": "https://github.com/Ambdulghaffar/cv-ai-analyzer" }
     ],
     "featured": false
   },

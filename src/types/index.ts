@@ -11,6 +11,7 @@ export interface Profile {
   photoUrl: string;
   title: LocalizedText;
   tagline: LocalizedText;
+  heroSummary: LocalizedText;
   bio: LocalizedText;
   location: LocalizedText;
   email: string;

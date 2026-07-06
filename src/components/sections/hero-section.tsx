@@ -18,7 +18,9 @@ export async function HeroSection({ locale }: { locale: Locale }) {
         <h1 className="max-w-2xl font-heading text-3xl font-semibold tracking-tight sm:text-5xl">
           {data.title[locale]}
         </h1>
-        <p className="max-w-xl text-muted-foreground sm:text-lg">{data.bio[locale]}</p>
+        <p className="max-w-xl text-muted-foreground sm:text-lg">
+          {data.heroSummary[locale]}
+        </p>
         <div className="flex flex-col gap-3 sm:flex-row">
           <Button
             size="lg"

@@ -10,9 +10,13 @@
     "fr": "Bonjour, je suis Ambdulghaffar",
     "en": "Hello, I'm Ambdulghaffar"
   },
+  "heroSummary": {
+    "fr": "Diplômé d'un Master Qualité du Logiciel à l'Université Abdelmalek Essaâdi, au sein de la Faculté des Sciences de Tétouan. Je conçois des applications web et mobile modernes (Spring Boot, Next.js, Flutter) avec un fort intérêt pour l'Intelligence Artificielle. Je crée des solutions complètes intégrant Machine Learning et LLM afin d'apporter des fonctionnalités intelligentes et à forte valeur ajoutée. Rigoureux et orienté architecture, je m'inscris dans une démarche de développement de logiciels performants, scalables et centrés utilisateur.",
+    "en": "Graduate of a Master's in Software Quality Engineering from Abdelmalek Essaâdi University, Faculty of Sciences of Tétouan. I build modern web and mobile applications (Spring Boot, Next.js, Flutter) with a strong interest in Artificial Intelligence. I create complete solutions integrating Machine Learning and LLMs to deliver intelligent, high-value features. Rigorous and architecture-oriented, I'm committed to building performant, scalable, and user-centered software."
+  },
   "bio": {
-    "fr": "Développeur Fullstack en Master Qualité du Logiciel, avec une expertise en développement d'applications web modernes (Spring Boot, Next.js) et un fort intérêt pour l'Intelligence Artificielle. Je conçois des solutions complètes intégrant Machine Learning et LLM afin d'apporter des fonctionnalités intelligentes et à forte valeur ajoutée. Rigoureux et orienté architecture, je m'inscris dans une démarche de développement de logiciels performants, scalables et centrés utilisateur.",
-    "en": "Fullstack developer pursuing a Master's in Software Quality Engineering, with expertise in modern web application development (Spring Boot, Next.js) and a strong interest in Artificial Intelligence. I design complete solutions integrating Machine Learning and LLMs to deliver intelligent, high-value features. Rigorous and architecture-oriented, I'm committed to building performant, scalable, and user-centered software."
+    "fr": "Fullstack, je travaille aussi bien sur le backend que sur le frontend en m'appuyant sur mon stack (Spring Boot, Next.js, Laravel, Django, Flutter...) pour livrer des applications complètes, du modèle de données jusqu'à l'interface utilisateur. Curieux et passionné par l'intelligence artificielle, j'aime explorer comment le Machine Learning et les LLM peuvent enrichir des produits concrets, du prototype jusqu'à la mise en production.",
+    "en": "Fullstack, I work on both backend and frontend, relying on my stack (Spring Boot, Next.js, Laravel, Django, Flutter...) to deliver complete applications, from the data model to the user interface. Curious about artificial intelligence, I enjoy exploring how Machine Learning and LLMs can enhance real products, from prototype to production."
   },
   "location": {
     "fr": "Tétouan, Maroc",

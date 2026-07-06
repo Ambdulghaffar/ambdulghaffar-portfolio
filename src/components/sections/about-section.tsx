@@ -20,11 +20,11 @@ export async function AboutSection({ locale }: { locale: Locale }) {
 
   return (
     <section id="about" className="mx-auto max-w-5xl px-4 py-16 sm:px-6">
-      <SectionHeading title={t("title")} subtitle={t("subtitle")} />
-      <div className="mt-8 grid grid-cols-1 gap-10 lg:grid-cols-3">
-        <p className="text-muted-foreground lg:col-span-2 sm:text-lg">
-          {data.bio[locale]}
-        </p>
+      <div className="grid grid-cols-1 gap-10 lg:grid-cols-3 lg:items-start">
+        <div className="flex flex-col gap-6 lg:col-span-2">
+          <SectionHeading title={t("title")} subtitle={t("subtitle")} />
+          <p className="text-muted-foreground sm:text-lg">{data.bio[locale]}</p>
+        </div>
         <div className="grid grid-cols-3 gap-4 lg:grid-cols-1">
           {stats.map((stat) => (
             <div key={stat.label} className="rounded-xl bg-card p-4 text-center ring-1 ring-foreground/10 lg:text-left">

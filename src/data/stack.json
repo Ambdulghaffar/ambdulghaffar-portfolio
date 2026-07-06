@@ -7,7 +7,7 @@
   {
     "id": "backend",
     "category": { "fr": "Backend & Scripting", "en": "Backend & Scripting" },
-    "items": ["Laravel", "PHP", "Spring Boot", "Java", "Django", "Python", "LaTeX (PDF Generation)"]
+    "items": ["Laravel", "PHP", "Spring Boot", "Java", "Django", "Python"]
   },
   {
     "id": "ai-ml",
