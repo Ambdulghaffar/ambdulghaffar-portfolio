@@ -25,9 +25,7 @@
   },
   "Projects": {
     "title": "Projects",
-    "subtitle": "A selection of projects I've worked on",
-    "viewProject": "View project",
-    "viewCode": "Source code"
+    "subtitle": "A selection of projects I've worked on"
   },
   "Experience": {
     "title": "Experience",

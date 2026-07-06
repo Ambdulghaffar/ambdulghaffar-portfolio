@@ -8,6 +8,7 @@ export type MaybeLocalizedText = string | LocalizedText;
 export interface Profile {
   name: string;
   initials: string;
+  photoUrl: string;
   title: LocalizedText;
   tagline: LocalizedText;
   bio: LocalizedText;
@@ -28,14 +29,27 @@ export interface StackCategory {
   items: string[];
 }
 
+export type ProjectLinkType =
+  | "github-backend"
+  | "github-frontend"
+  | "github-mobile"
+  | "github"
+  | "live";
+
+export interface ProjectLink {
+  type: ProjectLinkType;
+  label: LocalizedText;
+  url: string;
+}
+
 export interface Project {
   id: string;
   title: LocalizedText;
   status: LocalizedText;
   description: LocalizedText;
   stack: string[];
-  githubUrl: string;
-  liveUrl: string;
+  image: string;
+  links: ProjectLink[];
   featured: boolean;
 }
 

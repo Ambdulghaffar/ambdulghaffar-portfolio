@@ -50,6 +50,7 @@ export function MobileNav({
           {navItems.map((item) => (
             <SheetClose
               key={item.href}
+              nativeButton={false}
               render={
                 <a
                   href={item.href}
@@ -61,6 +62,7 @@ export function MobileNav({
             </SheetClose>
           ))}
           <SheetClose
+            nativeButton={false}
             render={
               <NextLink
                 href={loginHref}

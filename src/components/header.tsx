@@ -51,6 +51,7 @@ export async function Header({ locale }: { locale: Locale }) {
             size="icon"
             className="hidden sm:inline-flex"
             aria-label={t("login")}
+            nativeButton={false}
             render={<NextLink href="/admin/login" aria-label={t("login")} />}
           >
             <LogIn className="size-4" />

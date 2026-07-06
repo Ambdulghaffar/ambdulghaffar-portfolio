@@ -1,8 +1,11 @@
+import { ImagePlus } from "lucide-react";
+
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
+import { ProfileAvatar } from "@/components/profile-avatar";
 import profile from "@/data/profile.json";
 import type { Profile } from "@/types";
 
@@ -25,6 +28,29 @@ export default function AdminProfilePage() {
         </CardHeader>
         <CardContent>
           <form className="grid gap-4">
+            <div className="flex flex-col gap-1.5">
+              <Label htmlFor="photo-file">Photo de profil</Label>
+              <div className="flex items-center gap-4">
+                <ProfileAvatar
+                  src={data.photoUrl}
+                  alt={data.name}
+                  initials={data.initials}
+                  className="size-16 shrink-0"
+                />
+                <div className="flex flex-1 flex-col gap-2">
+                  <div className="flex items-center gap-2">
+                    <Input id="photo-file" type="file" accept="image/*" className="flex-1" />
+                    <ImagePlus className="size-4 shrink-0 text-muted-foreground" />
+                  </div>
+                  <Input
+                    id="photo-url"
+                    placeholder="/images/profile.jpg"
+                    defaultValue={data.photoUrl}
+                    aria-label="Chemin ou URL de la photo"
+                  />
+                </div>
+              </div>
+            </div>
             <div className="grid grid-cols-2 gap-3">
               <div className="flex flex-col gap-1.5">
                 <Label htmlFor="name">Nom complet</Label>

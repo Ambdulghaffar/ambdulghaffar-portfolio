@@ -8,8 +8,12 @@
       "en": "Platform connecting drivers with automotive service providers in Morocco, featuring an intelligent dispatch engine (Relayer AI). Backend contribution: multi-criteria scoring engine, Transactional Outbox pattern with Kafka, geolocation, FCM notifications. Mobile contribution: multi-profile app (Client, Garage, Employee), authentication, GPS tracking, chat."
     },
     "stack": ["Spring Boot", "Java 21", "PostgreSQL", "PostGIS", "Kafka", "Firebase", "Flutter", "Dart", "Riverpod", "Docker", "JWT"],
-    "githubUrl": "",
-    "liveUrl": "",
+    "image": "/images/projects/rilygo-v2.png",
+    "links": [
+      { "type": "github-backend", "label": { "fr": "Repo Backend", "en": "Backend Repo" }, "url": "" },
+      { "type": "github-mobile", "label": { "fr": "Repo Mobile", "en": "Mobile Repo" }, "url": "" },
+      { "type": "live", "label": { "fr": "Voir le projet", "en": "View project" }, "url": "" }
+    ],
     "featured": true
   },
   {
@@ -21,21 +25,28 @@
       "en": "Feature-based frontend architecture, Clean Architecture backend with DTO pattern. Secure authentication and complete stock management."
     },
     "stack": ["Next.js", "TypeScript", "Tailwind CSS", "Shadcn/UI", "NextAuth.js", "Spring Boot", "Spring Security", "JWT", "JPA/Hibernate", "PostgreSQL"],
-    "githubUrl": "",
-    "liveUrl": "",
+    "image": "/images/projects/gestion-stock.png",
+    "links": [
+      { "type": "github-backend", "label": { "fr": "Repo Backend", "en": "Backend Repo" }, "url": "https://github.com/Ambdulghaffar/stockflow-api" },
+      { "type": "github-frontend", "label": { "fr": "Repo Frontend", "en": "Frontend Repo" }, "url": "https://github.com/Ambdulghaffar/stockflow-web" },
+      { "type": "live", "label": { "fr": "Voir le projet", "en": "View project" }, "url": "" }
+    ],
     "featured": true
   },
   {
     "id": "nutrition-app",
     "title": { "fr": "Application de nutrition", "en": "Nutrition tracking app" },
-    "status": { "fr": "En cours", "en": "In progress" },
+    "status": { "fr": "Projet personnel", "en": "Personnel project" },
     "description": {
       "fr": "Application web complète de suivi nutritionnel avec interface moderne.",
       "en": "Complete web application for nutrition tracking with a modern interface."
     },
     "stack": ["React.js", "Next.js", "TypeScript", "Tailwind", "Shadcn UI"],
-    "githubUrl": "",
-    "liveUrl": "",
+    "image": "/images/projects/nutrition-app.png",
+    "links": [
+      { "type": "github", "label": { "fr": "Voir le code", "en": "View code" }, "url": "https://github.com/Ambdulghaffar/nutrispark-NextJS" },
+      { "type": "live", "label": { "fr": "Voir le projet", "en": "View project" }, "url": "" }
+    ],
     "featured": false
   },
   {
@@ -47,8 +58,10 @@
       "en": "Conversational agent (LLM) conducting an interactive investigation to validate transactions and detect fraud."
     },
     "stack": ["Python", "Streamlit", "PyTorch", "ML", "IA Générative (LLMs)"],
-    "githubUrl": "",
-    "liveUrl": "",
+    "image": "/images/projects/chatbot-investigation.png",
+    "links": [
+      { "type": "github", "label": { "fr": "Voir le code", "en": "View code" }, "url": "https://github.com/Ambdulghaffar/ccfd-investigation-chatbot" }
+    ],
     "featured": false
   },
   {
@@ -60,8 +73,10 @@
       "en": "AI-powered CV parsing and analysis tool."
     },
     "stack": ["Python", "Streamlit", "LLM (Groq API)"],
-    "githubUrl": "",
-    "liveUrl": "",
+    "image": "/images/projects/cv-analyzer.png",
+    "links": [
+      { "type": "github", "label": { "fr": "Voir le code", "en": "View code" }, "url": "" }
+    ],
     "featured": false
   },
   {
@@ -72,9 +87,11 @@
       "fr": "Plateforme de prise de rendez-vous en ligne entre patients et médecins.",
       "en": "Online appointment booking platform between patients and doctors."
     },
-    "stack": ["Laravel", "Bootstrap", "UML"],
-    "githubUrl": "",
-    "liveUrl": "",
+    "stack": ["PHP","Laravel", "Bootstrap"],
+    "image": "/images/projects/rdv-medical.png",
+    "links": [
+      { "type": "github", "label": { "fr": "Voir le code", "en": "View code" }, "url": "https://github.com/Ambdulghaffar/Laravel_medical_office_management" }
+    ],
     "featured": false
   },
   {
@@ -85,9 +102,11 @@
       "fr": "Interface dynamique SPA pour la gestion des commandes et menus.",
       "en": "Dynamic SPA interface for managing orders and menus."
     },
-    "stack": ["React"],
-    "githubUrl": "",
-    "liveUrl": "",
+    "stack": ["React + vite"],
+    "image": "/images/projects/restaurant-management.png",
+    "links": [
+      { "type": "github", "label": { "fr": "Voir le code", "en": "View code" }, "url": "https://github.com/Ambdulghaffar/React-Restaurant" }
+    ],
     "featured": false
   },
   {
@@ -99,8 +118,10 @@
       "en": "Administrative system for tracking students and courses."
     },
     "stack": ["Django", "Python", "Bootstrap"],
-    "githubUrl": "",
-    "liveUrl": "",
+    "image": "/images/projects/school-management.png",
+    "links": [
+      { "type": "github", "label": { "fr": "Voir le code", "en": "View code" }, "url": "https://github.com/Ambdulghaffar/Django_crud_school_management" }
+    ],
     "featured": false
   }
 ]
