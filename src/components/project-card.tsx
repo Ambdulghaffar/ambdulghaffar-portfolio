@@ -41,7 +41,9 @@ export function ProjectCard({ project, locale }: ProjectCardProps) {
         ))}
       </CardContent>
       {links.length > 0 && (
-        <CardFooter className="flex flex-wrap gap-2">
+        <CardFooter
+          className={`flex flex-wrap gap-2 ${links.length === 1 ? "justify-center" : ""}`}
+        >
           {links.map((link) => (
             <Button
               key={link.type}
