@@ -20,6 +20,10 @@ export interface Profile {
   socials: {
     linkedin: string;
     github: string;
+    kaggle: string;
+    whatsapp: string;
+    instagram: string;
+    facebook: string;
   };
   cvUrl: string;
 }

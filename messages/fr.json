@@ -36,13 +36,19 @@
   "Contact": {
     "title": "Contact",
     "subtitle": "Une question, une opportunité ? Écrivez-moi",
+    "infoTitle": "Me contacter",
     "name": "Nom",
     "namePlaceholder": "Votre nom",
     "email": "Email",
     "emailPlaceholder": "vous@exemple.com",
     "message": "Message",
     "messagePlaceholder": "Votre message...",
-    "send": "Envoyer"
+    "send": "Envoyer",
+    "sending": "Envoi en cours...",
+    "success": "Message envoyé !",
+    "error": "Une erreur est survenue. Réessayez plus tard.",
+    "invalidEmail": "Veuillez entrer une adresse email valide.",
+    "emptyMessage": "Le message ne peut pas être vide."
   },
   "Footer": {
     "rights": "Tous droits réservés."

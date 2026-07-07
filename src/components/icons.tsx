@@ -13,3 +13,30 @@ export function LinkedInIcon(props: React.SVGProps<SVGSVGElement>) {
     </svg>
   );
 }
+
+export function InstagramIcon(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+      {...props}
+    >
+      <rect x="2.5" y="2.5" width="19" height="19" rx="5" />
+      <circle cx="12" cy="12" r="4.2" />
+      <circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none" />
+    </svg>
+  );
+}
+
+export function FacebookIcon(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" {...props}>
+      <path d="M13.5 21.5v-8.2h2.75l.41-3.2H13.5V8.1c0-.92.26-1.55 1.58-1.55h1.68V3.7A22.6 22.6 0 0 0 14.3 3.5c-2.42 0-4.08 1.48-4.08 4.2v2.34H7.5v3.2h2.72v8.26Z" />
+    </svg>
+  );
+}
