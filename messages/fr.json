@@ -25,7 +25,9 @@
   "Projects": {
     "title": "Projets",
     "subtitle": "Une sélection de projets sur lesquels j'ai travaillé",
-    "watchDemo": "Voir la démo"
+    "watchDemo": "Voir la démo",
+    "seeMore": "Voir plus de projets",
+    "allTitle": "Tous mes projets"
   },
   "Experience": {
     "title": "Expérience",
