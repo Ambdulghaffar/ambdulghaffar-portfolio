@@ -1,5 +1,6 @@
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
+import { ScrollToHash } from "@/components/scroll-to-hash";
 import { HeroSection } from "@/components/sections/hero-section";
 import { StackSection } from "@/components/sections/stack-section";
 import { AboutSection } from "@/components/sections/about-section";
@@ -17,6 +18,7 @@ export default async function Home({
 
   return (
     <div className="flex flex-1 flex-col">
+      <ScrollToHash />
       <Header locale={locale} />
       <main className="flex-1">
         <HeroSection locale={locale} />

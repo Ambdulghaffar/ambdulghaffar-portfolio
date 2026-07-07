@@ -11,9 +11,10 @@ import {
   SheetTitle,
   SheetClose,
 } from "@/components/ui/sheet";
+import { Link } from "@/i18n/navigation";
 
 interface NavItem {
-  href: string;
+  hash: string;
   label: string;
 }
 
@@ -40,11 +41,11 @@ export function MobileNav({ navItems, menuLabel, siteName }: MobileNavProps) {
         <nav className="flex flex-col gap-1 px-4">
           {navItems.map((item) => (
             <SheetClose
-              key={item.href}
+              key={item.hash}
               nativeButton={false}
               render={
-                <a
-                  href={item.href}
+                <Link
+                  href={{ pathname: "/", hash: item.hash }}
                   className="rounded-md px-2 py-2 text-sm font-medium text-foreground hover:bg-muted"
                 />
               }

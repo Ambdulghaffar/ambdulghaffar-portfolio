@@ -14,11 +14,11 @@ export async function Header({ locale }: { locale: Locale }) {
   const c = await getTranslations({ locale, namespace: "Common" });
 
   const navItems = [
-    { href: "#about", label: t("about") },
-    { href: "#stack", label: t("stack") },
-    { href: "#projects", label: t("projects") },
-    { href: "#experience", label: t("experience") },
-    { href: "#contact", label: t("contact") },
+    { hash: "about", label: t("about") },
+    { hash: "stack", label: t("stack") },
+    { hash: "projects", label: t("projects") },
+    { hash: "experience", label: t("experience") },
+    { hash: "contact", label: t("contact") },
   ];
 
   return (
@@ -30,13 +30,13 @@ export async function Header({ locale }: { locale: Locale }) {
 
         <nav className="hidden items-center gap-1 sm:flex">
           {navItems.map((item) => (
-            <a
-              key={item.href}
-              href={item.href}
+            <Link
+              key={item.hash}
+              href={{ pathname: "/", hash: item.hash }}
               className="rounded-md px-3 py-1.5 text-sm font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
             >
               {item.label}
-            </a>
+            </Link>
           ))}
         </nav>
 

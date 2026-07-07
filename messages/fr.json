@@ -58,6 +58,7 @@
   "Common": {
     "toggleTheme": "Changer de thème",
     "toggleLanguage": "Changer de langue",
-    "menu": "Menu"
+    "menu": "Menu",
+    "backToHome": "Retour à l'accueil"
   }
 }
