@@ -136,24 +136,42 @@
   {
     "id": "cv-analyzer",
     "title": {
-      "fr": "Analyseur intelligent de CVs (IA)",
-      "en": "Smart CV Analyzer (AI)"
+      "fr": "CV Analyzer AI — Matching CV/Emploi par IA",
+      "en": "CV Analyzer AI — AI-Powered Resume Matching"
     },
-    "status": { "fr": "En cours", "en": "In progress" },
+    "status": { "fr": "Projet personnel", "en": "Personal project" },
     "description": {
-      "fr": "Outil d'analyse et de parsing de CVs propulsé par l'intelligence artificielle.",
-      "en": "AI-powered CV parsing and analysis tool."
+      "fr": "Plateforme fullstack d'analyse de CV par IA, avec un mode Candidat (score de compatibilité, lettres de motivation) et un mode Recruteur (classement automatique de candidats). Architecture conteneurisée multi-services",
+      "en": "Fullstack AI-powered resume analysis platform, with a Candidate mode (compatibility score, cover letters) and a Recruiter mode (automatic candidate ranking). Containerized multi-service architecture. "
     },
-    "stack": ["Python", "Streamlit", "LLM (Groq API)"],
+    "stack": [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Shadcn/UI",
+      "FastAPI",
+      "Python",
+      "Supabase",
+      "PostgreSQL",
+      "Groq API (Llama 3.3 70B)",
+      "Docker",
+      "Docker Compose"
+    ],
     "image": "/images/projects/cv-analyzer.png",
+    "videoUrl": "/videos/projects/cv-analyzer.mp4",
     "links": [
       {
+        "type": "live",
+        "label": { "fr": "Voir le projet", "en": "View project" },
+        "url": ""
+      },
+      {
         "type": "github",
-        "label": { "fr": "Voir le code", "en": "View code" },
-        "url": "https://github.com/Ambdulghaffar/cv-ai-analyzer"
+        "label": { "fr": "Repo Infra (Docker)", "en": "Infra Repo (Docker)" },
+        "url": "https://github.com/Ambdulghaffar/cv-analyzer-infra"
       }
     ],
-    "featured": false
+    "featured": true
   },
   {
     "id": "rdv-medical",
