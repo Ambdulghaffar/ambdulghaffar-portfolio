@@ -36,5 +36,8 @@
     "instagram": "https://www.instagram.com/ambdulghaffar.ahamadi/",
     "facebook": "https://www.facebook.com/Ambdulghaffar.Ahamadi"
   },
-  "cvUrl": "/cv/Ambdulghaffar-Ahamadi-CV.pdf"
+  "cvUrl": {
+    "fr": "/cv/CV_Ambdulghaffar_Ahamadi_FR.pdf",
+    "en": "/cv/CV_Ambdulghaffar_Ahamadi_EN.pdf"
+  }
 }

@@ -25,7 +25,7 @@ export interface Profile {
     instagram: string;
     facebook: string;
   };
-  cvUrl: string;
+  cvUrl: { fr: string; en: string };
 }
 
 export interface StackCategory {

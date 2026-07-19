@@ -33,7 +33,7 @@ export async function HeroSection({ locale }: { locale: Locale }) {
             size="lg"
             variant="outline"
             nativeButton={false}
-            render={<a href={data.cvUrl} download aria-label={t("downloadCv")} />}
+            render={<a href={data.cvUrl[locale]} download aria-label={t("downloadCv")} />}
           >
             <Download data-icon="inline-start" />
             {t("downloadCv")}
