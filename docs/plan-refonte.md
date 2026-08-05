@@ -7,7 +7,7 @@
 - [ ] Remove legacy design-specific components and pages (per docs/design-diagnostic.md "to remove" list)
 - [ ] Remove the /projects/[slug] dynamic route and the ProjectDetails-as-page logic (superseded by an
   AlertDialog pattern — project details now open in a dialog, not a separate page)
-- [ ] Define design tokens (navy/orange palette) as Tailwind v4 @theme CSS variables
+- [x] Define design tokens (navy/orange palette) as Tailwind v4 @theme CSS variables
 - [ ] Rebuild layout shell (header/nav, mobile Sheet, background layer)
 - [ ] Install/verify shadcn primitives needed (Button, Card, Badge, Dialog/AlertDialog, Sheet, Sonner)
 - [ ] Build Hero section
