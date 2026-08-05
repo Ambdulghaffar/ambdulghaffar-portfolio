@@ -2,9 +2,6 @@ import { getTranslations } from "next-intl/server";
 import { ArrowLeft } from "lucide-react";
 
 import { Header } from "@/components/header";
-import { Footer } from "@/components/footer";
-import { SectionHeading } from "@/components/section-heading";
-import { ProjectsGrid } from "@/components/projects-grid";
 import { Button } from "@/components/ui/button";
 import { Link } from "@/i18n/navigation";
 import projectsData from "@/data/projects.json";
@@ -12,6 +9,7 @@ import type { Locale, Project } from "@/types";
 
 const projects = projectsData as Project[];
 
+// TODO(plan-refonte): projects grid/card removed during redesign cleanup, see docs/plan-refonte.md.
 export default async function ProjectsPage({
   params,
 }: {
@@ -36,13 +34,12 @@ export default async function ProjectsPage({
             <ArrowLeft data-icon="inline-start" />
             {c("backToHome")}
           </Button>
-          <SectionHeading title={t("allTitle")} />
-          <div className="mt-8">
-            <ProjectsGrid projects={projects} locale={locale} watchDemoLabel={t("watchDemo")} />
-          </div>
+          <h1 className="text-2xl font-bold">{t("allTitle")}</h1>
+          <p className="text-muted-foreground mt-2 text-sm">
+            {projects.length} projects — grid UI to be rebuilt, see docs/plan-refonte.md.
+          </p>
         </section>
       </main>
-      <Footer locale={locale} />
     </div>
   );
 }

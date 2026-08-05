@@ -55,4 +55,4 @@ demand without needing to paste their content again):
 
 - @docs/design-reference.md — diagnostic of the reference portfolio (Vue.js) inspiring the redesign
 - @docs/design-diagnostic.md — diagnostic of this repo's existing state (stack, components to keep/drop, friction points)
-- `@docs/plan-refonte.md` — checklist-based action plan (not yet created)plan, validated rebuild order
+- @docs/plan-refonte.md — checklist-based action plan, validated rebuild order
