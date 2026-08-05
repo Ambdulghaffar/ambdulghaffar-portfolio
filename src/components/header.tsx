@@ -42,7 +42,7 @@ export async function Header({ locale }: { locale: Locale }) {
             variant="outline"
             size="sm"
             nativeButton={false}
-            className="hidden border-primary bg-transparent text-primary hover:bg-primary/10 hover:text-primary dark:border-primary dark:bg-transparent dark:hover:bg-primary/10 sm:inline-flex"
+            className="hidden border-primary bg-transparent text-primary transition-colors hover:border-primary hover:bg-primary hover:text-primary-foreground dark:border-primary dark:bg-transparent dark:hover:border-primary dark:hover:bg-primary dark:hover:text-primary-foreground sm:inline-flex"
             render={<a href={cvUrl} download />}
           >
             <Download data-icon="inline-start" />

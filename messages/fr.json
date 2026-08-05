@@ -9,6 +9,13 @@
   },
   "Hero": {
     "eyebrow": "Bonjour, je suis",
+    "roles": [
+      "Développeur Fullstack",
+      "Développeur React & Next.js",
+      "Développeur Spring Boot",
+      "Développeur Flutter",
+      "Passionné d'IA"
+    ],
     "viewProjects": "Voir mes projets",
     "getInTouch": "Me contacter",
     "downloadCv": "Télécharger mon CV",

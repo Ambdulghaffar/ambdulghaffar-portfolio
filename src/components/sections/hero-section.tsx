@@ -4,6 +4,7 @@ import { getTranslations } from "next-intl/server";
 import { Button } from "@/components/ui/button";
 import { StatItem } from "@/components/stat-item";
 import { SocialLinks } from "@/components/social-links";
+import { RoleTypewriter } from "@/components/role-typewriter";
 import { Link } from "@/i18n/navigation";
 import profile from "@/data/profile.json";
 import type { Locale, Profile } from "@/types";
@@ -19,6 +20,7 @@ const HERO_STATS = [
 
 export async function HeroSection({ locale }: { locale: Locale }) {
   const t = await getTranslations({ locale, namespace: "Hero" });
+  const roles = t.raw("roles") as string[];
 
   return (
     <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 sm:py-28 lg:px-8">
@@ -33,7 +35,7 @@ export async function HeroSection({ locale }: { locale: Locale }) {
               {data.name}
             </p>
             <h1 className="font-heading text-4xl leading-tight font-extrabold text-foreground sm:text-5xl lg:text-6xl">
-              {data.title[locale]}
+              <RoleTypewriter roles={roles} />
             </h1>
           </div>
 
@@ -63,7 +65,7 @@ export async function HeroSection({ locale }: { locale: Locale }) {
         </div>
 
         <div className="hidden lg:flex lg:justify-center">
-          <div className="relative aspect-[4/5] w-full max-w-md overflow-hidden rounded-2xl bg-muted">
+          <div className="relative aspect-[4/5] w-full max-w-md overflow-hidden rounded-2xl bg-muted transition-transform duration-300 ease-out hover:scale-105 hover:rotate-2">
             {data.photoUrl ? (
               <Image
                 src={data.photoUrl}

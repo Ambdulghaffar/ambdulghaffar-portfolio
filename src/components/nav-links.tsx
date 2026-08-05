@@ -22,17 +22,10 @@ export function NavLinks({ navItems }: { navItems: NavItem[] }) {
             key={item.hash}
             href={{ pathname: "/", hash: item.hash }}
             className={cn(
-              "flex items-center gap-1.5 rounded-md px-3 py-1.5 text-sm font-medium text-muted-foreground transition-colors hover:text-primary",
-              isActive && "text-foreground"
+              "rounded-md px-3 py-1.5 text-sm font-medium text-muted-foreground underline decoration-2 underline-offset-4 decoration-transparent transition-colors hover:text-primary",
+              isActive && "text-primary decoration-primary"
             )}
           >
-            <span
-              className={cn(
-                "size-1.5 rounded-full bg-primary transition-opacity",
-                isActive ? "opacity-100" : "opacity-0"
-              )}
-              aria-hidden="true"
-            />
             {item.label}
           </Link>
         );

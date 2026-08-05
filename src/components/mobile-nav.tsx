@@ -63,19 +63,12 @@ export function MobileNav({
                   <Link
                     href={{ pathname: "/", hash: item.hash }}
                     className={cn(
-                      "flex items-center gap-2 rounded-md px-2 py-2 text-sm font-medium text-foreground transition-colors hover:bg-muted hover:text-primary",
-                      isActive && "text-primary"
+                      "w-fit rounded-md px-2 py-2 text-sm font-medium text-foreground underline decoration-2 underline-offset-4 decoration-transparent transition-colors hover:bg-muted hover:text-primary",
+                      isActive && "text-primary decoration-primary"
                     )}
                   />
                 }
               >
-                <span
-                  className={cn(
-                    "size-1.5 rounded-full bg-primary transition-opacity",
-                    isActive ? "opacity-100" : "opacity-0"
-                  )}
-                  aria-hidden="true"
-                />
                 {item.label}
               </SheetClose>
             );
@@ -85,7 +78,7 @@ export function MobileNav({
           <Button
             variant="outline"
             nativeButton={false}
-            className="border-primary bg-transparent text-primary hover:bg-primary/10 hover:text-primary dark:border-primary dark:bg-transparent dark:hover:bg-primary/10"
+            className="border-primary bg-transparent text-primary transition-colors hover:border-primary hover:bg-primary hover:text-primary-foreground dark:border-primary dark:bg-transparent dark:hover:border-primary dark:hover:bg-primary dark:hover:text-primary-foreground"
             render={<a href={cvUrl} download />}
           >
             <Download data-icon="inline-start" />
