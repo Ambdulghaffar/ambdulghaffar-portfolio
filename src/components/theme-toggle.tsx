@@ -16,8 +16,8 @@ export function ThemeToggle({ label }: { label: string }) {
       onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
     >
       <span className="relative flex size-4 items-center justify-center">
-        <Sun className="absolute size-4 scale-100 dark:scale-0" />
-        <Moon className="absolute size-4 scale-0 dark:scale-100" />
+        <Sun className="absolute size-4 scale-100 text-primary dark:scale-0" />
+        <Moon className="absolute size-4 scale-0 text-primary dark:scale-100" />
       </span>
     </Button>
   );

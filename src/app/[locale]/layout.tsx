@@ -58,7 +58,11 @@ export default async function LocaleLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
       suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-col">
+      <body className="relative flex min-h-full flex-col">
+        <div
+          className="pointer-events-none fixed inset-x-0 top-0 -z-10 h-[40rem] bg-[radial-gradient(ellipse_60%_50%_at_50%_-10%,var(--color-primary),transparent)] opacity-[0.06]"
+          aria-hidden="true"
+        />
         <NextIntlClientProvider>
           <ThemeProvider
             attribute="class"

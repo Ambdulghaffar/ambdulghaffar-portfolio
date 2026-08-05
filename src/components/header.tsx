@@ -3,6 +3,7 @@ import { getTranslations } from "next-intl/server";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { LanguageToggle } from "@/components/language-toggle";
 import { MobileNav } from "@/components/mobile-nav";
+import { NavLinks } from "@/components/nav-links";
 import { Link } from "@/i18n/navigation";
 import profile from "@/data/profile.json";
 import type { Locale, Profile } from "@/types";
@@ -23,22 +24,12 @@ export async function Header({ locale }: { locale: Locale }) {
 
   return (
     <header className="sticky top-0 z-40 border-b border-border/60 bg-background/80 backdrop-blur-sm">
-      <div className="mx-auto flex h-14 max-w-5xl items-center justify-between px-4 sm:px-6">
+      <div className="mx-auto flex h-14 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="font-heading text-sm font-semibold tracking-tight">
           {data.name}
         </Link>
 
-        <nav className="hidden items-center gap-1 sm:flex">
-          {navItems.map((item) => (
-            <Link
-              key={item.hash}
-              href={{ pathname: "/", hash: item.hash }}
-              className="rounded-md px-3 py-1.5 text-sm font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
-            >
-              {item.label}
-            </Link>
-          ))}
-        </nav>
+        <NavLinks navItems={navItems} />
 
         <div className="flex items-center gap-1">
           <ThemeToggle label={c("toggleTheme")} />

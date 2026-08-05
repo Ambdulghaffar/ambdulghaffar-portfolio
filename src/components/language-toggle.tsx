@@ -39,7 +39,7 @@ export function LanguageToggle({
           <DropdownMenuItem
             key={item.value}
             data-active={item.value === locale}
-            className="data-[active=true]:font-medium"
+            className="data-[active=true]:font-medium data-[active=true]:text-primary"
             onClick={() => router.replace(pathname, { locale: item.value })}
           >
             {item.label}
