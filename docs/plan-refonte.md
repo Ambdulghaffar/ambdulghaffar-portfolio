@@ -4,12 +4,12 @@
 > (diagnostic of the Vue.js reference portfolio) and `docs/design-diagnostic.md` (diagnostic of
 > this repo's existing state) for the full context behind each step.
 
-- [ ] Remove legacy design-specific components and pages (per docs/design-diagnostic.md "to remove" list)
-- [ ] Remove the /projects/[slug] dynamic route and the ProjectDetails-as-page logic (superseded by an
+- [x] Remove legacy design-specific components and pages (per docs/design-diagnostic.md "to remove" list)
+- [x] Remove the /projects/[slug] dynamic route and the ProjectDetails-as-page logic (superseded by an
   AlertDialog pattern — project details now open in a dialog, not a separate page)
 - [x] Define design tokens (navy/orange palette) as Tailwind v4 @theme CSS variables
 - [x] Rebuild layout shell (header/nav, mobile Sheet, background layer)
-- [ ] Install/verify shadcn primitives needed (Button, Card, Badge, Dialog/AlertDialog, Sheet, Sonner)
+- [x] Install/verify shadcn primitives needed (Button, Card, Badge, Dialog/AlertDialog, Sheet, Sonner)
 - [ ] Build Hero section
 - [ ] Build About section
 - [ ] Build Skills section (grid + auto-cycling spotlight highlight)
