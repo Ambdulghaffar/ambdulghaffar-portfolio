@@ -8,8 +8,15 @@
     "contact": "Contact"
   },
   "Hero": {
+    "eyebrow": "Bonjour, je suis",
     "viewProjects": "Voir mes projets",
-    "downloadCv": "Télécharger mon CV"
+    "getInTouch": "Me contacter",
+    "downloadCv": "Télécharger mon CV",
+    "stats": {
+      "experience": "Ans d'expérience",
+      "projects": "Projets réalisés",
+      "frameworks": "Frameworks & outils"
+    }
   },
   "Stack": {
     "title": "Stack technique",

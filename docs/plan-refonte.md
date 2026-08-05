@@ -10,7 +10,7 @@
 - [x] Define design tokens (navy/orange palette) as Tailwind v4 @theme CSS variables
 - [x] Rebuild layout shell (header/nav, mobile Sheet, background layer)
 - [x] Install/verify shadcn primitives needed (Button, Card, Badge, Dialog/AlertDialog, Sheet, Sonner)
-- [ ] Build Hero section
+- [x] Build Hero section
 - [ ] Build About section
 - [ ] Build Skills section (grid + auto-cycling spotlight highlight)
 - [ ] Build Projects section (grid + card with "View details" trigger opening an AlertDialog: tech

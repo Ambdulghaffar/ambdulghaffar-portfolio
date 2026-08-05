@@ -1,5 +1,7 @@
 import { getTranslations } from "next-intl/server";
+import { Download } from "lucide-react";
 
+import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { LanguageToggle } from "@/components/language-toggle";
 import { MobileNav } from "@/components/mobile-nav";
@@ -13,6 +15,8 @@ const data = profile as Profile;
 export async function Header({ locale }: { locale: Locale }) {
   const t = await getTranslations({ locale, namespace: "Nav" });
   const c = await getTranslations({ locale, namespace: "Common" });
+  const h = await getTranslations({ locale, namespace: "Hero" });
+  const cvUrl = data.cvUrl[locale];
 
   const navItems = [
     { hash: "about", label: t("about") },
@@ -34,7 +38,23 @@ export async function Header({ locale }: { locale: Locale }) {
         <div className="flex items-center gap-1">
           <ThemeToggle label={c("toggleTheme")} />
           <LanguageToggle locale={locale} label={c("toggleLanguage")} />
-          <MobileNav navItems={navItems} menuLabel={c("menu")} siteName={data.name} />
+          <Button
+            variant="outline"
+            size="sm"
+            nativeButton={false}
+            className="hidden border-primary bg-transparent text-primary hover:bg-primary/10 hover:text-primary dark:border-primary dark:bg-transparent dark:hover:bg-primary/10 sm:inline-flex"
+            render={<a href={cvUrl} download />}
+          >
+            <Download data-icon="inline-start" />
+            {h("downloadCv")}
+          </Button>
+          <MobileNav
+            navItems={navItems}
+            menuLabel={c("menu")}
+            siteName={data.name}
+            cvUrl={cvUrl}
+            downloadCvLabel={h("downloadCv")}
+          />
         </div>
       </div>
     </header>

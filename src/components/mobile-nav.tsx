@@ -1,6 +1,6 @@
 "use client";
 
-import { Menu } from "lucide-react";
+import { Menu, Download } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -10,6 +10,7 @@ import {
   SheetHeader,
   SheetTitle,
   SheetClose,
+  SheetFooter,
 } from "@/components/ui/sheet";
 import { Link } from "@/i18n/navigation";
 import { useActiveHash } from "@/lib/use-active-hash";
@@ -24,9 +25,17 @@ interface MobileNavProps {
   navItems: NavItem[];
   menuLabel: string;
   siteName: string;
+  cvUrl: string;
+  downloadCvLabel: string;
 }
 
-export function MobileNav({ navItems, menuLabel, siteName }: MobileNavProps) {
+export function MobileNav({
+  navItems,
+  menuLabel,
+  siteName,
+  cvUrl,
+  downloadCvLabel,
+}: MobileNavProps) {
   const activeHash = useActiveHash();
 
   return (
@@ -72,6 +81,17 @@ export function MobileNav({ navItems, menuLabel, siteName }: MobileNavProps) {
             );
           })}
         </nav>
+        <SheetFooter>
+          <Button
+            variant="outline"
+            nativeButton={false}
+            className="border-primary bg-transparent text-primary hover:bg-primary/10 hover:text-primary dark:border-primary dark:bg-transparent dark:hover:bg-primary/10"
+            render={<a href={cvUrl} download />}
+          >
+            <Download data-icon="inline-start" />
+            {downloadCvLabel}
+          </Button>
+        </SheetFooter>
       </SheetContent>
     </Sheet>
   );

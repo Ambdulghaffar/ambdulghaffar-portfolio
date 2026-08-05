@@ -8,8 +8,15 @@
     "contact": "Contact"
   },
   "Hero": {
+    "eyebrow": "Hi, I am",
     "viewProjects": "View my projects",
-    "downloadCv": "Download my CV"
+    "getInTouch": "Get in touch",
+    "downloadCv": "Download my CV",
+    "stats": {
+      "experience": "Years Experience",
+      "projects": "Projects Built",
+      "frameworks": "Frameworks & Tools"
+    }
   },
   "Stack": {
     "title": "Tech Stack",
