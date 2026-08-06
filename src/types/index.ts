@@ -28,10 +28,18 @@ export interface Profile {
   cvUrl: { fr: string; en: string };
 }
 
+export type SkillLevel = "expert" | "advanced" | "intermediate" | "beginner";
+
+export interface StackItem {
+  name: string;
+  level: SkillLevel;
+  percentage: number;
+}
+
 export interface StackCategory {
   id: string;
   category: LocalizedText;
-  items: string[];
+  items: StackItem[];
 }
 
 export type ProjectLinkType =

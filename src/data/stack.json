@@ -1,32 +1,100 @@
 [
   {
-    "id": "frontend",
-    "category": { "fr": "Frontend", "en": "Frontend" },
-    "items": ["ReactJS", "Next.js", "TypeScript", "Tailwind CSS", "Bootstrap", "Shadcn UI", "HTML/CSS", "JavaScript"]
+    "id": "languages",
+    "category": { "fr": "Langages", "en": "Languages" },
+    "items": [
+      { "name": "HTML", "level": "expert", "percentage": 100 },
+      { "name": "CSS", "level": "expert", "percentage": 100 },
+      { "name": "JavaScript", "level": "expert", "percentage": 100 },
+      { "name": "TypeScript", "level": "advanced", "percentage": 85 },
+      { "name": "Java", "level": "expert", "percentage": 90 },
+      { "name": "Python", "level": "advanced", "percentage": 80 },
+      { "name": "PHP", "level": "advanced", "percentage": 80 },
+      { "name": "Dart", "level": "intermediate", "percentage": 60 }
+    ]
   },
   {
-    "id": "backend",
-    "category": { "fr": "Backend & Scripting", "en": "Backend & Scripting" },
-    "items": ["Laravel", "PHP", "Spring Boot", "Java", "Django", "Python"]
+    "id": "frameworks",
+    "category": { "fr": "Frameworks & Bibliothèques", "en": "Frameworks & Libraries" },
+    "items": [
+      { "name": "React", "level": "expert", "percentage": 90 },
+      { "name": "Next.js", "level": "expert", "percentage": 90 },
+      { "name": "Spring Boot", "level": "expert", "percentage": 90 },
+      { "name": "Flutter", "level": "intermediate", "percentage": 65 },
+      { "name": "Laravel", "level": "advanced", "percentage": 80 },
+      { "name": "FastAPI", "level": "beginner", "percentage": 45 },
+      { "name": "Tailwind CSS", "level": "expert", "percentage": 100 },
+      { "name": "Shadcn/UI", "level": "expert", "percentage": 100 },
+      { "name": "Bootstrap", "level": "expert", "percentage": 100 }
+    ]
   },
   {
-    "id": "ai-ml",
-    "category": { "fr": "IA & Machine Learning", "en": "AI & Machine Learning" },
-    "items": ["Scikit-learn", "PyTorch", "Classification", "Régression", "Clustering", "LLMs (Groq API)", "Streamlit"]
+    "id": "state-management",
+    "category": { "fr": "Gestion d'état", "en": "State Management" },
+    "items": [
+      { "name": "Redux Toolkit", "level": "advanced", "percentage": 80 },
+      { "name": "Context API", "level": "advanced", "percentage": 75 },
+      { "name": "Riverpod", "level": "intermediate", "percentage": 60 }
+    ]
   },
   {
-    "id": "database-auth",
-    "category": { "fr": "Bases de données & Auth", "en": "Databases & Auth" },
-    "items": ["PostgreSQL", "MySQL", "SQLite", "Keycloak", "NextAuth", "JWT"]
+    "id": "apis-data",
+    "category": { "fr": "APIs & Données", "en": "APIs & Data" },
+    "items": [
+      { "name": "REST APIs", "level": "expert", "percentage": 90 },
+      { "name": "Swagger/OpenAPI", "level": "advanced", "percentage": 80 },
+      { "name": "Postman", "level": "advanced", "percentage": 80 }
+    ]
   },
   {
-    "id": "tools",
-    "category": { "fr": "Outils & Conception", "en": "Tools & Design" },
-    "items": ["Git & GitHub", "Postman", "Jira", "UML", "Docker"]
+    "id": "database-orm",
+    "category": { "fr": "Bases de données & ORM", "en": "Database & ORM" },
+    "items": [
+      { "name": "MySQL", "level": "expert", "percentage": 90 },
+      { "name": "PostgreSQL", "level": "expert", "percentage": 90 },
+      { "name": "PostGIS", "level": "intermediate", "percentage": 55 },
+      { "name": "SQLite", "level": "intermediate", "percentage": 70 },
+      { "name": "Supabase", "level": "intermediate", "percentage": 70 },
+      { "name": "JPA/Hibernate", "level": "advanced", "percentage": 80 }
+    ]
   },
   {
-    "id": "mobile",
-    "category": { "fr": "Mobile", "en": "Mobile" },
-    "items": ["Flutter", "Dart", "Riverpod", "Clean Architecture"]
+    "id": "auth-security",
+    "category": { "fr": "Authentification & Sécurité", "en": "Auth & Security" },
+    "items": [
+      { "name": "Spring Security", "level": "expert", "percentage": 90 },
+      { "name": "JWT", "level": "expert", "percentage": 90 },
+      { "name": "OAuth2", "level": "expert", "percentage": 90 },
+      { "name": "NextAuth.js", "level": "advanced", "percentage": 80 },
+      { "name": "Row Level Security", "level": "intermediate", "percentage": 55 }
+    ]
+  },
+  {
+    "id": "devops-cloud",
+    "category": { "fr": "DevOps & Cloud", "en": "DevOps & Cloud" },
+    "items": [
+      { "name": "Docker", "level": "advanced", "percentage": 80 },
+      { "name": "Docker Compose", "level": "advanced", "percentage": 80 },
+      { "name": "GitHub Actions", "level": "advanced", "percentage": 75 }
+    ]
+  },
+  {
+    "id": "ai-llm",
+    "category": { "fr": "IA & LLM", "en": "AI & LLM" },
+    "items": [
+      { "name": "Groq API", "level": "intermediate", "percentage": 60 },
+      { "name": "LLMs / Prompt Engineering", "level": "intermediate", "percentage": 65 },
+      { "name": "Streamlit", "level": "intermediate", "percentage": 60 }
+    ]
+  },
+  {
+    "id": "tools-utilities",
+    "category": { "fr": "Outils & Utilitaires", "en": "Tools & Utilities" },
+    "items": [
+      { "name": "Git", "level": "expert", "percentage": 90 },
+      { "name": "GitHub", "level": "expert", "percentage": 90 },
+      { "name": "Jira", "level": "advanced", "percentage": 80 },
+      { "name": "UML", "level": "expert", "percentage": 100 }
+    ]
   }
 ]

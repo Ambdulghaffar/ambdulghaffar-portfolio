@@ -26,8 +26,26 @@
     }
   },
   "Stack": {
-    "title": "Tech Stack",
-    "subtitle": "Technologies and tools I use daily"
+    "title": "My Skills",
+    "subtitle": "Technologies and tools I use daily, from frontend to backend to DevOps.",
+    "levels": {
+      "expert": "Expert",
+      "advanced": "Advanced",
+      "intermediate": "Intermediate",
+      "beginner": "Beginner"
+    },
+    "filters": {
+      "all": "All",
+      "languages": "Languages",
+      "frameworks": "Frameworks & Libraries",
+      "state-management": "State Management",
+      "apis-data": "APIs & Data",
+      "database-orm": "Database & ORM",
+      "auth-security": "Auth & Security",
+      "devops-cloud": "DevOps & Cloud",
+      "ai-llm": "AI & LLM",
+      "tools-utilities": "Tools & Utilities"
+    }
   },
   "About": {
     "title": "About Me",

@@ -26,8 +26,26 @@
     }
   },
   "Stack": {
-    "title": "Stack technique",
-    "subtitle": "Les technologies et outils que j'utilise au quotidien"
+    "title": "Mes compétences",
+    "subtitle": "Les technologies et outils que j'utilise au quotidien, du frontend au backend en passant par le DevOps.",
+    "levels": {
+      "expert": "Expert",
+      "advanced": "Avancé",
+      "intermediate": "Intermédiaire",
+      "beginner": "Débutant"
+    },
+    "filters": {
+      "all": "Tous",
+      "languages": "Langages",
+      "frameworks": "Frameworks & Bibliothèques",
+      "state-management": "Gestion d'état",
+      "apis-data": "APIs & Données",
+      "database-orm": "Bases de données & ORM",
+      "auth-security": "Authentification & Sécurité",
+      "devops-cloud": "DevOps & Cloud",
+      "ai-llm": "IA & LLM",
+      "tools-utilities": "Outils & Utilitaires"
+    }
   },
   "About": {
     "title": "À propos de moi",
