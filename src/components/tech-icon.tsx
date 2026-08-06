@@ -12,8 +12,10 @@ import {
   SiHibernate,
   SiHtml5,
   SiJavascript,
+  SiJest,
   SiJira,
   SiJsonwebtokens,
+  SiJunit5,
   SiLaravel,
   SiMysql,
   SiNextdotjs,
@@ -30,11 +32,13 @@ import {
   SiSupabase,
   SiSwagger,
   SiTailwindcss,
+  SiTestinglibrary,
   SiTypescript,
   SiUml,
 } from "react-icons/si";
 import {
   Code2,
+  FlaskConical,
   Globe,
   KeyRound,
   Layers,
@@ -61,6 +65,7 @@ const LUCIDE_FALLBACKS: Record<string, LucideIcon> = {
   "Groq API": Zap,
   "LLMs / Prompt Engineering": Sparkles,
   "Docker Compose": Layers,
+  Mockito: FlaskConical,
 };
 
 const SIMPLE_ICONS: Record<string, IconType> = {
@@ -96,6 +101,9 @@ const SIMPLE_ICONS: Record<string, IconType> = {
   GitHub: SiGithub,
   Jira: SiJira,
   UML: SiUml,
+  "JUnit 5": SiJunit5,
+  Jest: SiJest,
+  "React Testing Library": SiTestinglibrary,
 };
 
 interface TechIconProps {

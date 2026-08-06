@@ -96,5 +96,15 @@
       { "name": "Jira", "level": "advanced", "percentage": 80 },
       { "name": "UML", "level": "expert", "percentage": 100 }
     ]
+  },
+  {
+    "id": "testing-quality",
+    "category": { "fr": "Tests & Qualité", "en": "Testing & Quality" },
+    "items": [
+      { "name": "JUnit 5", "level": "advanced", "percentage": 75 },
+      { "name": "Mockito", "level": "advanced", "percentage": 70 },
+      { "name": "Jest", "level": "advanced", "percentage": 80 },
+      { "name": "React Testing Library", "level": "advanced", "percentage": 80 }
+    ]
   }
 ]

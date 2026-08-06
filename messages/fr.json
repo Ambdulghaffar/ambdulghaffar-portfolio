@@ -44,7 +44,8 @@
       "auth-security": "Authentification & Sécurité",
       "devops-cloud": "DevOps & Cloud",
       "ai-llm": "IA & LLM",
-      "tools-utilities": "Outils & Utilitaires"
+      "tools-utilities": "Outils & Utilitaires",
+      "testing-quality": "Tests & Qualité"
     }
   },
   "About": {
