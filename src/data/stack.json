@@ -25,7 +25,10 @@
       { "name": "FastAPI", "level": "beginner", "percentage": 45 },
       { "name": "Tailwind CSS", "level": "expert", "percentage": 100 },
       { "name": "Shadcn/UI", "level": "expert", "percentage": 100 },
-      { "name": "Bootstrap", "level": "expert", "percentage": 100 }
+      { "name": "Bootstrap", "level": "expert", "percentage": 100 },
+      { "name": "Motion", "level": "intermediate", "percentage": 60 },
+      { "name": "next-intl", "level": "advanced", "percentage": 80 },
+      { "name": "next-themes", "level": "advanced", "percentage": 80 }
     ]
   },
   {

@@ -41,12 +41,14 @@ import {
   FlaskConical,
   Globe,
   KeyRound,
+  Languages,
   Layers,
   Lock,
   MapPin,
   Rows3,
   ShieldCheck,
   Sparkles,
+  SunMoon,
   Waves,
   Zap,
   type LucideIcon,
@@ -66,6 +68,9 @@ const LUCIDE_FALLBACKS: Record<string, LucideIcon> = {
   "LLMs / Prompt Engineering": Sparkles,
   "Docker Compose": Layers,
   Mockito: FlaskConical,
+  Motion: Zap,
+  "next-intl": Languages,
+  "next-themes": SunMoon,
 };
 
 const SIMPLE_ICONS: Record<string, IconType> = {
