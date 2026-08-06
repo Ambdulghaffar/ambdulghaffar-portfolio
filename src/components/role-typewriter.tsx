@@ -59,7 +59,7 @@ export function RoleTypewriter({ roles, className }: RoleTypewriterProps) {
       <span aria-hidden="true" className="inline-flex items-baseline">
         {text}
         <motion.span
-          className="ml-3 inline-block w-[3px] bg-primary"
+          className="ml-3 inline-block w-0.75 bg-primary"
           style={{ height: "0.85em" }}
           animate={{ opacity: [1, 0] }}
           transition={{ duration: 0.8, repeat: Infinity, repeatType: "reverse", ease: "linear" }}
