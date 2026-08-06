@@ -77,6 +77,7 @@ export function MobileNav({
         <SheetFooter>
           <Button
             variant="outline"
+            size="default"
             nativeButton={false}
             className="border-primary bg-transparent text-primary transition-colors hover:border-primary hover:bg-primary hover:text-primary-foreground dark:border-primary dark:bg-transparent dark:hover:border-primary dark:hover:bg-primary dark:hover:text-primary-foreground"
             render={<a href={cvUrl} download />}

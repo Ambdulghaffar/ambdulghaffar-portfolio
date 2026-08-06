@@ -29,7 +29,7 @@ export async function Header({ locale }: { locale: Locale }) {
   return (
     <header className="sticky top-0 z-40 border-b border-border/60 bg-background/80 backdrop-blur-sm">
       <div className="mx-auto flex h-14 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <Link href="/" className="font-heading text-sm font-semibold tracking-tight">
+        <Link href="/" className="font-heading text-base font-semibold tracking-tight">
           {data.name}
         </Link>
 
@@ -40,9 +40,9 @@ export async function Header({ locale }: { locale: Locale }) {
           <LanguageToggle locale={locale} label={c("toggleLanguage")} />
           <Button
             variant="outline"
-            size="sm"
+            size="default"
             nativeButton={false}
-            className="hidden border-primary bg-transparent text-primary transition-colors hover:border-primary hover:bg-primary hover:text-primary-foreground dark:border-primary dark:bg-transparent dark:hover:border-primary dark:hover:bg-primary dark:hover:text-primary-foreground sm:inline-flex"
+            className="hidden border-primary bg-transparent text-primary text-base font-semibold  transition-colors hover:border-primary hover:bg-primary hover:text-primary-foreground dark:border-primary dark:bg-transparent dark:hover:border-primary dark:hover:bg-primary dark:hover:text-primary-foreground sm:inline-flex"
             render={<a href={cvUrl} download />}
           >
             <Download data-icon="inline-start" />
