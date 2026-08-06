@@ -30,11 +30,52 @@
     "subtitle": "Technologies and tools I use daily"
   },
   "About": {
-    "title": "About",
+    "title": "About Me",
     "subtitle": "Who I am and what drives me",
     "projectsCount": "Projects",
     "experienceCount": "Experiences",
-    "stackCount": "Skill categories"
+    "stackCount": "Skill categories",
+    "terminalLines": [
+      { "type": "prompt", "text": "ambdulghaffar@portfolio:~$ git log --oneline --author=\"Ambdulghaffar\"" },
+      { "type": "output", "text": "a1b2c3d feat: Master's in Software Quality" },
+      { "type": "output", "text": "b4e5f6a feat: Spring Boot & Flutter internship at S B Solutions" },
+      { "type": "output", "text": "c7d8e9b feat: fullstack React/Next.js + Spring Boot projects" },
+      { "type": "prompt", "text": "ambdulghaffar@portfolio:~$ whoami" },
+      { "type": "output", "text": "Ambdulghaffar Ahamadi — Fullstack Developer" },
+      { "type": "prompt", "text": "ambdulghaffar@portfolio:~$ cat skills.txt" },
+      { "type": "output", "text": "React · Next.js · Spring Boot · Flutter · FastAPI · TypeScript" },
+      { "type": "prompt", "text": "ambdulghaffar@portfolio:~$ echo $LOCATION" },
+      { "type": "output", "text": "Tétouan, Morocco 🇲🇦" },
+      { "type": "prompt", "text": "ambdulghaffar@portfolio:~$" }
+    ],
+    "approachTitle": "My Approach",
+    "approach": [
+      {
+        "icon": "layout",
+        "title": "Clean Architecture",
+        "description": "Clean Architecture, DTO pattern, clear separation of concerns on both backend and frontend."
+      },
+      {
+        "icon": "checkCircle",
+        "title": "Quality & Testing",
+        "description": "Unit and integration tests (JUnit/Mockito, Jest/React Testing Library) to ensure code reliability."
+      },
+      {
+        "icon": "smartphone",
+        "title": "Responsive & Accessible",
+        "description": "Interfaces that adapt to every screen, with close attention to user experience."
+      },
+      {
+        "icon": "container",
+        "title": "DevOps Rigor",
+        "description": "Docker containerization and continuous integration (CI/CD) for code that works beyond my machine."
+      },
+      {
+        "icon": "rocket",
+        "title": "Continuous Learning",
+        "description": "Continuously learning new technologies, with a strong interest in Artificial Intelligence."
+      }
+    ]
   },
   "Projects": {
     "title": "Projects",

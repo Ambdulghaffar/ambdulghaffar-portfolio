@@ -23,7 +23,7 @@ export async function HeroSection({ locale }: { locale: Locale }) {
   const roles = t.raw("roles") as string[];
 
   return (
-    <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 sm:py-28 lg:px-8">
+    <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 sm:py-28 lg:px-8 ">
       <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
         <div className="flex flex-col items-start gap-6">
           <p className="text-sm font-semibold tracking-[0.2em] text-muted-foreground uppercase">
