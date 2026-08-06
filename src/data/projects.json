@@ -46,7 +46,7 @@
       "fr": "Application Fullstack de Gestion de Stock",
       "en": "Fullstack Stock Management App"
     },
-    "status": { "fr": "En cours", "en": "In progress" },
+    "status": { "fr": "Projet personnel", "en": "Personal project" },
     "description": {
       "fr": "Frontend en architecture feature-based, backend en Clean Architecture avec pattern DTO. Authentification sécurisée et gestion complète des stocks.",
       "en": "Feature-based frontend architecture, Clean Architecture backend with DTO pattern. Secure authentication and complete stock management."
@@ -68,12 +68,7 @@
       {
         "type": "github-backend",
         "label": { "fr": "Repo Backend", "en": "Backend Repo" },
-        "url": "https://github.com/Ambdulghaffar/stockflow-api"
-      },
-      {
-        "type": "github-frontend",
-        "label": { "fr": "Repo Frontend", "en": "Frontend Repo" },
-        "url": "https://github.com/Ambdulghaffar/stockflow-web"
+        "url": "https://github.com/Ambdulghaffar/stockflow-infra"
       },
       {
         "type": "live",
@@ -82,56 +77,6 @@
       }
     ],
     "featured": true
-  },
-  {
-    "id": "nutrition-app",
-    "title": {
-      "fr": "Application de nutrition",
-      "en": "Nutrition tracking app"
-    },
-    "status": { "fr": "Projet personnel", "en": "Personnel project" },
-    "description": {
-      "fr": "Application web complète de suivi nutritionnel avec interface moderne.",
-      "en": "Complete web application for nutrition tracking with a modern interface."
-    },
-    "stack": ["React.js", "Next.js", "TypeScript", "Tailwind", "Shadcn UI"],
-    "image": "/images/projects/nutrition-app.png",
-    "links": [
-      {
-        "type": "github",
-        "label": { "fr": "Voir le code", "en": "View code" },
-        "url": "https://github.com/Ambdulghaffar/nutrispark-NextJS"
-      },
-      {
-        "type": "live",
-        "label": { "fr": "Voir le projet", "en": "View project" },
-        "url": ""
-      }
-    ],
-    "featured": false
-  },
-  {
-    "id": "chatbot-investigation",
-    "title": {
-      "fr": "Chatbot d'Investigation : Dialogue LLM",
-      "en": "Investigation Chatbot: LLM Dialogue"
-    },
-    "status": { "fr": "Projet académique", "en": "Academic project" },
-    "description": {
-      "fr": "Agent conversationnel (LLM) menant une enquête interactive pour valider des transactions et détecter la fraude.",
-      "en": "Conversational agent (LLM) conducting an interactive investigation to validate transactions and detect fraud."
-    },
-    "stack": ["Python", "Streamlit", "PyTorch", "ML", "IA Générative (LLMs)"],
-    "image": "/images/projects/chatbot-investigation.png",
-    "videoUrl": "/videos/projects/chatbot-investigation.mp4",
-    "links": [
-      {
-        "type": "github",
-        "label": { "fr": "Voir le code", "en": "View code" },
-        "url": "https://github.com/Ambdulghaffar/ccfd-investigation-chatbot"
-      }
-    ],
-    "featured": false
   },
   {
     "id": "cv-analyzer",
@@ -174,6 +119,56 @@
     "featured": true
   },
   {
+    "id": "chatbot-investigation",
+    "title": {
+      "fr": "Chatbot d'Investigation : Dialogue LLM",
+      "en": "Investigation Chatbot: LLM Dialogue"
+    },
+    "status": { "fr": "Projet académique", "en": "Academic project" },
+    "description": {
+      "fr": "Agent conversationnel (LLM) menant une enquête interactive pour valider des transactions et détecter la fraude.",
+      "en": "Conversational agent (LLM) conducting an interactive investigation to validate transactions and detect fraud."
+    },
+    "stack": ["Python", "Streamlit", "PyTorch", "ML", "IA Générative (LLMs)"],
+    "image": "/images/projects/chatbot-investigation.png",
+    "videoUrl": "/videos/projects/chatbot-investigation.mp4",
+    "links": [
+      {
+        "type": "github",
+        "label": { "fr": "Voir le code", "en": "View code" },
+        "url": "https://github.com/Ambdulghaffar/ccfd-investigation-chatbot"
+      }
+    ],
+    "featured": true
+  },
+  {
+    "id": "nutrition-app",
+    "title": {
+      "fr": "Application de nutrition",
+      "en": "Nutrition tracking app"
+    },
+    "status": { "fr": "Projet personnel", "en": "Personnel project" },
+    "description": {
+      "fr": "Application web complète de suivi nutritionnel avec interface moderne.",
+      "en": "Complete web application for nutrition tracking with a modern interface."
+    },
+    "stack": ["React.js", "Next.js", "TypeScript", "Tailwind", "Shadcn UI"],
+    "image": "/images/projects/nutrition-app.png",
+    "links": [
+      {
+        "type": "github",
+        "label": { "fr": "Voir le code", "en": "View code" },
+        "url": "https://github.com/Ambdulghaffar/nutrispark-NextJS"
+      },
+      {
+        "type": "live",
+        "label": { "fr": "Voir le projet", "en": "View project" },
+        "url": ""
+      }
+    ],
+    "featured": false
+  },
+  {
     "id": "rdv-medical",
     "title": {
       "fr": "Gestion de rendez-vous médical",
@@ -213,28 +208,6 @@
         "type": "github",
         "label": { "fr": "Voir le code", "en": "View code" },
         "url": "https://github.com/Ambdulghaffar/React-Restaurant"
-      }
-    ],
-    "featured": false
-  },
-  {
-    "id": "school-management",
-    "title": {
-      "fr": "Application de gestion d'école",
-      "en": "School management application"
-    },
-    "status": { "fr": "Projet académique", "en": "Academic project" },
-    "description": {
-      "fr": "Système administratif pour le suivi des élèves et des cours.",
-      "en": "Administrative system for tracking students and courses."
-    },
-    "stack": ["Django", "Python", "Bootstrap"],
-    "image": "/images/projects/school-management.png",
-    "links": [
-      {
-        "type": "github",
-        "label": { "fr": "Voir le code", "en": "View code" },
-        "url": "https://github.com/Ambdulghaffar/Django_crud_school_management"
       }
     ],
     "featured": false

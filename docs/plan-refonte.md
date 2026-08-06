@@ -14,7 +14,7 @@
 - [x] Build About section
 - [x] Build Skills/Stack section (category filters + animated skill-level progress bars — supersedes
   the auto-cycling spotlight idea from the original Vue reference, per updated design direction)
-- [ ] Build Projects section (grid + card with "View details" trigger opening an AlertDialog: tech
+- [x] Build Projects section (grid + card with "View details" trigger opening an AlertDialog: tech
   stack badges, description, footer with "Watch demo" button — video if available, otherwise hidden
   or disabled — and a "Close" button)
 - [ ] Build Contact modal (Dialog triggered from Hero)

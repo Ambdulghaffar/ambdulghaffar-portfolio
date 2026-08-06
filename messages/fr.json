@@ -97,10 +97,12 @@
     ]
   },
   "Projects": {
-    "title": "Projets",
+    "title": "Mes projets",
     "subtitle": "Une sélection de projets sur lesquels j'ai travaillé",
     "watchDemo": "Voir la démo",
-    "seeMore": "Voir plus de projets",
+    "viewDetails": "Voir les détails",
+    "close": "Fermer",
+    "seeMore": "Voir tous les projets",
     "allTitle": "Tous mes projets"
   },
   "Experience": {

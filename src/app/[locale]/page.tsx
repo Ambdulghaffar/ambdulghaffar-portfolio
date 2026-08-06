@@ -3,6 +3,7 @@ import { ParticleBackground } from "@/components/particle-background";
 import { ScrollToHash } from "@/components/scroll-to-hash";
 import { AboutSection } from "@/components/sections/about-section";
 import { HeroSection } from "@/components/sections/hero-section";
+import { ProjectsSection } from "@/components/sections/projects-section";
 import { StackSection } from "@/components/sections/stack-section";
 import type { Locale } from "@/types";
 
@@ -24,6 +25,7 @@ export default async function Home({
           <ParticleBackground />
           <AboutSection locale={locale} />
           <StackSection locale={locale} />
+          <ProjectsSection locale={locale} />
         </div>
       </main>
     </div>
