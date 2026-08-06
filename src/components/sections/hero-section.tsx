@@ -34,29 +34,36 @@ export async function HeroSection({ locale }: { locale: Locale }) {
             <p className="font-heading text-2xl font-bold text-primary sm:text-3xl">
               {data.name}
             </p>
-            <h1 className="font-heading text-4xl leading-tight font-extrabold text-foreground sm:text-5xl lg:text-6xl">
+            <h1 className="font-heading text-2xl leading-tight font-extrabold text-foreground sm:text-3xl lg:text-5xl">
               <RoleTypewriter roles={roles} />
             </h1>
           </div>
 
-          <p className="max-w-xl text-muted-foreground">{data.heroSummary[locale]}</p>
+          <p className="max-w-xl text-muted-foreground font-semibold">
+            {data.heroSummary[locale]}
+          </p>
 
           <div className="flex flex-wrap gap-8">
             {HERO_STATS.map((stat) => (
-              <StatItem key={stat.key} value={stat.value} label={t(`stats.${stat.key}`)} />
+              <StatItem
+                key={stat.key}
+                value={stat.value}
+                label={t(`stats.${stat.key}`)}
+              />
             ))}
           </div>
 
           <div className="flex flex-wrap gap-3">
             <Button
               size="lg"
+              className="font-bold text-md"
               nativeButton={false}
               render={<Link href={{ pathname: "/", hash: "projects" }} />}
             >
               {t("viewProjects")}
             </Button>
             {/* TODO(plan-refonte): wire to the Contact Dialog once it's built, see docs/plan-refonte.md */}
-            <Button variant="outline" size="lg">
+            <Button variant="outline" size="lg" className="font-bold text-md">
               {t("getInTouch")}
             </Button>
           </div>
@@ -64,8 +71,8 @@ export async function HeroSection({ locale }: { locale: Locale }) {
           <SocialLinks socials={data.socials} />
         </div>
 
-        <div className="hidden lg:flex lg:justify-center">
-          <div className="relative aspect-[4/5] w-full max-w-md overflow-hidden rounded-2xl bg-muted transition-transform duration-300 ease-out hover:scale-105 hover:rotate-2">
+        <div className="hidden lg:flex lg:justify-center lg:items-center">
+          <div className="relative aspect-4/3 w-full max-w-md overflow-hidden rounded-2xl bg-muted transition-transform duration-300 ease-out hover:scale-105 hover:rotate-2">
             {data.photoUrl ? (
               <Image
                 src={data.photoUrl}
