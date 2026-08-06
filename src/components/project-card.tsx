@@ -27,7 +27,7 @@ import {
 import { cn } from "@/lib/utils";
 import type { Locale, Project } from "@/types";
 
-const STACK_PREVIEW_COUNT = 4;
+const STACK_PREVIEW_COUNT = 5;
 
 interface ProjectCardLabels {
   viewDetails: string;

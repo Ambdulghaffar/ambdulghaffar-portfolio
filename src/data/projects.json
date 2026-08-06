@@ -48,8 +48,8 @@
     },
     "status": { "fr": "Projet personnel", "en": "Personal project" },
     "description": {
-      "fr": "Frontend en architecture feature-based, backend en Clean Architecture avec pattern DTO. Authentification sécurisée et gestion complète des stocks.",
-      "en": "Feature-based frontend architecture, Clean Architecture backend with DTO pattern. Secure authentication and complete stock management."
+      "fr": "Plateforme complète de gestion de stock et e-commerce : frontend en architecture feature-based, backend en Clean Architecture avec pattern DTO, authentification sécurisée (JWT, Google OAuth) et gestion complète des stocks. Conteneurisée avec Docker et testée, avec un pipeline CI/CD GitHub Actions.",
+      "en": "Complete stock management and e-commerce platform: feature-based frontend architecture, Clean Architecture backend with DTO pattern, secure authentication (JWT, Google OAuth) and full stock management. Containerized with Docker and tested, with a GitHub Actions CI/CD pipeline."
     },
     "stack": [
       "Next.js",
@@ -57,17 +57,21 @@
       "Tailwind CSS",
       "Shadcn/UI",
       "NextAuth.js",
+      "Redux Toolkit",
       "Spring Boot",
       "Spring Security",
       "JWT",
       "JPA/Hibernate",
-      "PostgreSQL"
+      "MySQL",
+      "Docker",
+      "Docker Compose",
+      "GitHub Actions"
     ],
     "image": "/images/projects/gestion-stock.png",
     "links": [
       {
-        "type": "github-backend",
-        "label": { "fr": "Repo Backend", "en": "Backend Repo" },
+        "type": "github",
+        "label": { "fr": "Repo Infra", "en": "Infra Repo" },
         "url": "https://github.com/Ambdulghaffar/stockflow-infra"
       },
       {
