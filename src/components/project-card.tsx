@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { ExternalLink, Play } from "lucide-react";
 
@@ -43,8 +44,25 @@ export function ProjectCard({ project, locale, labels }: ProjectCardProps) {
   const liveLink = links.find((link) => link.type === "live");
   const codeLinks = links.filter((link) => link.type !== "live");
 
+  const [open, setOpen] = useState(false);
+  const contentRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!open) return;
+    // Base UI auto-focuses the first focusable footer button on open (good for
+    // accessibility), and the browser scrolls it into view as part of that same
+    // focus call — before this effect even runs, since it lives on a component
+    // deeper than this one and child effects commit first. Deferring to a
+    // macrotask lets that settle, then we snap the pane back to the top without
+    // touching the focus itself.
+    const timeout = setTimeout(() => {
+      contentRef.current?.scrollTo({ top: 0 });
+    }, 0);
+    return () => clearTimeout(timeout);
+  }, [open]);
+
   return (
-    <Dialog>
+    <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger
         aria-label={`${labels.viewDetails} — ${project.title[locale]}`}
         nativeButton={false}
@@ -61,7 +79,7 @@ export function ProjectCard({ project, locale, labels }: ProjectCardProps) {
         <CardHeader>
           <CardTitle className="text-lg">{project.title[locale]}</CardTitle>
         </CardHeader>
-        <CardContent className="flex flex-1 flex-col gap-3">
+        <CardContent className="flex flex-1 flex-col gap-3 ">
           <p className="line-clamp-3 min-h-15 text-sm text-muted-foreground">
             {project.description[locale]}
           </p>
@@ -75,10 +93,10 @@ export function ProjectCard({ project, locale, labels }: ProjectCardProps) {
       </DialogTrigger>
 
       <DialogContent
-        className="max-w-[calc(100%-2rem)] gap-0 overflow-hidden p-0 sm:max-w-3xl lg:max-w-4xl"
+        className="flex max-h-[90vh] max-w-[calc(100%-2rem)] flex-col gap-0 overflow-hidden p-0 sm:max-w-3xl lg:max-w-4xl"
         showCloseButton
       >
-        <div className="relative aspect-video w-full overflow-hidden rounded-t-xl">
+        <div className="relative h-[35vh] w-full shrink-0 overflow-hidden rounded-t-xl">
           <Image
             src={project.image}
             alt={project.title[locale]}
@@ -94,7 +112,7 @@ export function ProjectCard({ project, locale, labels }: ProjectCardProps) {
           </Badge>
         </div>
 
-        <div className="flex flex-col gap-4 p-6">
+        <div ref={contentRef} className="flex min-h-0 flex-col gap-4 overflow-y-auto p-6">
           <DialogHeader>
             <DialogTitle className="font-heading text-2xl">{project.title[locale]}</DialogTitle>
           </DialogHeader>

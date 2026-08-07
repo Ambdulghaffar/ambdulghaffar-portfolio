@@ -5,6 +5,7 @@ import Image from "next/image";
 import { Eye, ImageOff } from "lucide-react";
 
 import { Badge } from "@/components/ui/badge";
+import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 interface ProjectImageProps {
@@ -55,10 +56,12 @@ export function ProjectImage({
       {viewDetailsLabel && (
         <div
           aria-hidden="true"
-          className="absolute inset-0 flex items-center justify-center gap-2 bg-black/50 font-medium text-white opacity-0 transition-opacity duration-300 ease-out group-hover/image:opacity-100"
+          className="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 transition-opacity duration-300 ease-out group-hover/image:opacity-100"
         >
-          <Eye className="size-4" />
-          {viewDetailsLabel}
+          <span className={cn(buttonVariants({ variant: "default", size: "sm" }))}>
+            <Eye data-icon="inline-start" />
+            {viewDetailsLabel}
+          </span>
         </div>
       )}
     </div>
