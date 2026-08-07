@@ -2,6 +2,7 @@ import { Header } from "@/components/header";
 import { ParticleBackground } from "@/components/particle-background";
 import { ScrollToHash } from "@/components/scroll-to-hash";
 import { AboutSection } from "@/components/sections/about-section";
+import { ExperienceSection } from "@/components/sections/experience-section";
 import { HeroSection } from "@/components/sections/hero-section";
 import { ProjectsSection } from "@/components/sections/projects-section";
 import { StackSection } from "@/components/sections/stack-section";
@@ -26,6 +27,7 @@ export default async function Home({
           <AboutSection locale={locale} />
           <StackSection locale={locale} />
           <ProjectsSection locale={locale} />
+          <ExperienceSection locale={locale} />
         </div>
       </main>
     </div>

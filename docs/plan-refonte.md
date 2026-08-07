@@ -18,6 +18,9 @@
   reveals the rest; card click opens a Dialog with edge-to-edge image, full description, tech stack
   badges, and a footer with "Watch demo"/"View project" (solid), GitHub repo links (outline), and a
   "Close" button, each shown only when applicable)
+- [x] Build combined Experience & Education section (single alternating vertical timeline, ordered
+  experiences then education as given in the data — no auto-sort by date; Briefcase/GraduationCap
+  icon on the marker to tell the two apart; scroll-reveal per item via Motion)
 - [ ] Build Contact modal (Dialog triggered from Hero)
 - [ ] Build Footer (absent from reference, to design)
 - [ ] Build 404 page
