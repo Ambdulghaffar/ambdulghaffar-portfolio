@@ -20,7 +20,7 @@ export async function ContactSection({ locale }: { locale: Locale }) {
   ] as const;
 
   return (
-    <section id="contact" className="mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-28 lg:px-8">
+    <section id="contact" className="mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-28 lg:px-8 border-t border-border/60">
       <div className="flex flex-col items-center gap-4 text-center">
         <h2 className="font-heading text-3xl font-extrabold text-primary sm:text-4xl">
           {t("title")}

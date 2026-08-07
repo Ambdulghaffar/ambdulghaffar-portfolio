@@ -132,7 +132,11 @@
     "emptyMessage": "Message cannot be empty."
   },
   "Footer": {
-    "rights": "All rights reserved."
+    "tagline": "Fullstack developer building clean, performant, and user-centered web & mobile experiences.",
+    "navigate": "Navigate",
+    "connect": "Connect",
+    "credit": "Built with Next.js · TypeScript · Tailwind CSS · Motion",
+    "copyright": "© {year} {name}. All rights reserved."
   },
   "Common": {
     "toggleTheme": "Toggle theme",

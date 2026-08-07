@@ -132,7 +132,11 @@
     "emptyMessage": "Le message ne peut pas être vide."
   },
   "Footer": {
-    "rights": "Tous droits réservés."
+    "tagline": "Développeur fullstack, je conçois des expériences web et mobile propres, performantes et centrées sur l'utilisateur.",
+    "navigate": "Naviguer",
+    "connect": "Contact",
+    "credit": "Construit avec Next.js · TypeScript · Tailwind CSS · Motion",
+    "copyright": "© {year} {name}. Tous droits réservés."
   },
   "Common": {
     "toggleTheme": "Changer de thème",

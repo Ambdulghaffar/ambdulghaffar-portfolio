@@ -1,3 +1,4 @@
+import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import { ParticleBackground } from "@/components/particle-background";
 import { ScrollToHash } from "@/components/scroll-to-hash";
@@ -9,7 +10,6 @@ import { ProjectsSection } from "@/components/sections/projects-section";
 import { StackSection } from "@/components/sections/stack-section";
 import type { Locale } from "@/types";
 
-// TODO(plan-refonte): remaining sections still to rebuild, see docs/plan-refonte.md.
 export default async function Home({
   params,
 }: {
@@ -32,6 +32,7 @@ export default async function Home({
           <ContactSection locale={locale} />
         </div>
       </main>
+      <Footer locale={locale} />
     </div>
   );
 }

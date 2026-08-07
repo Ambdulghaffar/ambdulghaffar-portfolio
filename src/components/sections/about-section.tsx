@@ -35,7 +35,7 @@ export async function AboutSection({ locale }: { locale: Locale }) {
   const approach = t.raw("approach") as ApproachItem[];
 
   return (
-    <section id="about" className="mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-28 lg:px-8">
+    <section id="about" className="mx-auto border-t border-border/60 max-w-6xl px-4 py-20 sm:px-6 sm:py-28 lg:px-8">
       <div className="flex flex-col items-center gap-6 text-center">
         <h2 className="font-heading text-3xl font-extrabold text-primary sm:text-4xl">
           {t("title")}

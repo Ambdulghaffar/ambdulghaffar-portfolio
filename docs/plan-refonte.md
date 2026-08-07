@@ -24,7 +24,7 @@
 - [x] Build Contact section (anchored `#contact` section, not a modal — two-column layout: contact
   form card + "let's connect" info card with availability/response-time/location, copy-to-clipboard
   email, and social links; shares the particle background with the preceding sections)
-- [ ] Build Footer (absent from reference, to design)
+- [x] Build Footer (absent from reference, to design)
 - [ ] Build 404 page
 - [ ] Wire all text through next-intl (fr default, en secondary)
 - [ ] Polish: focus states, responsive audit below `xs`, accessibility check
