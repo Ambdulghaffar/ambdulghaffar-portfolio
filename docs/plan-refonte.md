@@ -25,6 +25,6 @@
   form card + "let's connect" info card with availability/response-time/location, copy-to-clipboard
   email, and social links; shares the particle background with the preceding sections)
 - [x] Build Footer (absent from reference, to design)
-- [ ] Build 404 page
+- [x] Build 404 page
 - [ ] Wire all text through next-intl (fr default, en secondary)
 - [ ] Polish: focus states, responsive audit below `xs`, accessibility check

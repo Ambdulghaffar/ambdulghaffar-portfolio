@@ -143,5 +143,9 @@
     "toggleLanguage": "Toggle language",
     "menu": "Menu",
     "backToHome": "Back to home"
+  },
+  "NotFound": {
+    "title": "Page not found",
+    "message": "The page you're looking for doesn't exist or has been moved."
   }
 }
