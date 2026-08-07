@@ -110,9 +110,14 @@
     "title": "Experience & Education"
   },
   "Contact": {
-    "title": "Contact",
+    "title": "Get in Touch",
     "subtitle": "A question, an opportunity? Get in touch",
-    "infoTitle": "Get in touch",
+    "infoTitle": "Let's connect",
+    "description": "Open to freelance and full-time opportunities alike, I'm always happy to talk about a project or a collaboration.",
+    "responseTime": "Usually responds within 24h",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "findMeOn": "Find me on",
     "name": "Name",
     "namePlaceholder": "Your name",
     "email": "Email",

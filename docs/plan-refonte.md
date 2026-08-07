@@ -21,7 +21,9 @@
 - [x] Build combined Experience & Education section (single alternating vertical timeline, ordered
   experiences then education as given in the data — no auto-sort by date; Briefcase/GraduationCap
   icon on the marker to tell the two apart; scroll-reveal per item via Motion)
-- [ ] Build Contact modal (Dialog triggered from Hero)
+- [x] Build Contact section (anchored `#contact` section, not a modal — two-column layout: contact
+  form card + "let's connect" info card with availability/response-time/location, copy-to-clipboard
+  email, and social links; shares the particle background with the preceding sections)
 - [ ] Build Footer (absent from reference, to design)
 - [ ] Build 404 page
 - [ ] Wire all text through next-intl (fr default, en secondary)

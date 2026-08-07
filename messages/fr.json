@@ -110,9 +110,14 @@
     "title": "Expérience & Formation"
   },
   "Contact": {
-    "title": "Contact",
+    "title": "Me contacter",
     "subtitle": "Une question, une opportunité ? Écrivez-moi",
-    "infoTitle": "Me contacter",
+    "infoTitle": "Discutons",
+    "description": "Ouvert aux opportunités freelance comme temps plein, je suis toujours partant pour échanger sur un projet ou une collaboration.",
+    "responseTime": "Réponds généralement sous 24h",
+    "copy": "Copier",
+    "copied": "Copié !",
+    "findMeOn": "Me retrouver sur",
     "name": "Nom",
     "namePlaceholder": "Votre nom",
     "email": "Email",

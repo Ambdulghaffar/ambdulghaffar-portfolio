@@ -62,8 +62,13 @@ export async function HeroSection({ locale }: { locale: Locale }) {
             >
               {t("viewProjects")}
             </Button>
-            {/* TODO(plan-refonte): wire to the Contact Dialog once it's built, see docs/plan-refonte.md */}
-            <Button variant="outline" size="lg" className="font-bold text-md">
+            <Button
+              variant="outline"
+              size="lg"
+              className="font-bold text-md"
+              nativeButton={false}
+              render={<Link href={{ pathname: "/", hash: "contact" }} />}
+            >
               {t("getInTouch")}
             </Button>
           </div>
