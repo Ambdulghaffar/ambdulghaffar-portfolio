@@ -1,8 +1,6 @@
 import { getTranslations } from "next-intl/server";
 
-import { ProjectCard } from "@/components/project-card";
-import { Button } from "@/components/ui/button";
-import { Link } from "@/i18n/navigation";
+import { ProjectsGrid } from "@/components/projects-grid";
 import projectsData from "@/data/projects.json";
 import type { Locale, Project } from "@/types";
 
@@ -11,11 +9,13 @@ const projects = projectsData as Project[];
 export async function ProjectsSection({ locale }: { locale: Locale }) {
   const t = await getTranslations({ locale, namespace: "Projects" });
 
-  const featuredProjects = projects.filter((project) => project.featured);
   const labels = {
     viewDetails: t("viewDetails"),
     watchDemo: t("watchDemo"),
     close: t("close"),
+    techStack: t("techStack"),
+    showMore: t("showMore"),
+    showLess: t("showLess"),
   };
 
   return (
@@ -27,16 +27,8 @@ export async function ProjectsSection({ locale }: { locale: Locale }) {
         <p className="max-w-2xl font-semibold text-muted-foreground">{t("subtitle")}</p>
       </div>
 
-      <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {featuredProjects.map((project) => (
-          <ProjectCard key={project.id} project={project} locale={locale} labels={labels} />
-        ))}
-      </div>
-
-      <div className="mt-10 flex justify-center">
-        <Button variant="outline" size="lg" nativeButton={false} render={<Link href="/projects" />}>
-          {t("seeMore")}
-        </Button>
+      <div className="mt-12">
+        <ProjectsGrid projects={projects} locale={locale} labels={labels} />
       </div>
     </section>
   );

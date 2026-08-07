@@ -101,9 +101,10 @@
     "subtitle": "A selection of projects I've worked on",
     "watchDemo": "Watch the demo",
     "viewDetails": "View details",
+    "techStack": "Tech Stack",
     "close": "Close",
-    "seeMore": "View all projects",
-    "allTitle": "All my projects"
+    "showMore": "Show more",
+    "showLess": "Show less"
   },
   "Experience": {
     "title": "Experience",

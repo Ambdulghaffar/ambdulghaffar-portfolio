@@ -101,9 +101,10 @@
     "subtitle": "Une sélection de projets sur lesquels j'ai travaillé",
     "watchDemo": "Voir la démo",
     "viewDetails": "Voir les détails",
+    "techStack": "Stack technique",
     "close": "Fermer",
-    "seeMore": "Voir tous les projets",
-    "allTitle": "Tous mes projets"
+    "showMore": "Voir plus",
+    "showLess": "Voir moins"
   },
   "Experience": {
     "title": "Expérience",

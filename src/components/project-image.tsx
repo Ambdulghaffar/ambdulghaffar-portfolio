@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { ImageOff } from "lucide-react";
+import { Eye, ImageOff } from "lucide-react";
 
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
@@ -11,16 +11,23 @@ interface ProjectImageProps {
   src: string;
   alt: string;
   status: string;
+  viewDetailsLabel?: string;
   className?: string;
 }
 
-export function ProjectImage({ src, alt, status, className }: ProjectImageProps) {
+export function ProjectImage({
+  src,
+  alt,
+  status,
+  viewDetailsLabel,
+  className,
+}: ProjectImageProps) {
   const [errored, setErrored] = useState(!src);
 
   return (
     <div
       className={cn(
-        "relative -mx-(--card-spacing) -mt-(--card-spacing) aspect-video overflow-hidden rounded-t-xl bg-gradient-to-br from-primary/15 via-muted to-secondary/30",
+        "group/image relative -mx-(--card-spacing) -mt-(--card-spacing) aspect-video overflow-hidden rounded-t-xl bg-linear-to-br from-primary/15 via-muted to-secondary/30",
         className
       )}
     >
@@ -30,7 +37,7 @@ export function ProjectImage({ src, alt, status, className }: ProjectImageProps)
           alt={alt}
           fill
           sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-          className="object-cover transition-transform duration-300 ease-out group-hover:scale-105"
+          className="object-cover transition-transform duration-300 ease-out group-hover/image:scale-105"
           onError={() => setErrored(true)}
         />
       )}
@@ -45,6 +52,15 @@ export function ProjectImage({ src, alt, status, className }: ProjectImageProps)
       >
         {status}
       </Badge>
+      {viewDetailsLabel && (
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 flex items-center justify-center gap-2 bg-black/50 font-medium text-white opacity-0 transition-opacity duration-300 ease-out group-hover/image:opacity-100"
+        >
+          <Eye className="size-4" />
+          {viewDetailsLabel}
+        </div>
+      )}
     </div>
   );
 }
