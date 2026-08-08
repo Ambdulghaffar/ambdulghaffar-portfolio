@@ -5,7 +5,7 @@ import { motion } from "motion/react";
 
 import { cn } from "@/lib/utils";
 
-const TYPING_SPEED_MS = 55;
+const TYPING_SPEED_MS = 25;
 const PAUSE_BETWEEN_LINES_MS = 250;
 
 export interface TerminalLine {

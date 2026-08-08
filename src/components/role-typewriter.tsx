@@ -5,9 +5,9 @@ import { motion } from "motion/react";
 
 import { cn } from "@/lib/utils";
 
-const TYPING_SPEED_MS = 70;
-const DELETING_SPEED_MS = 40;
-const PAUSE_AFTER_TYPED_MS = 1800;
+const TYPING_SPEED_MS = 45;
+const DELETING_SPEED_MS = 26;
+const PAUSE_AFTER_TYPED_MS = 1350;
 
 interface RoleTypewriterProps {
   roles: string[];

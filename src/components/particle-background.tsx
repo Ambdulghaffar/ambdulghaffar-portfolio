@@ -2,10 +2,13 @@
 
 import { useEffect, useRef } from "react";
 
-const PARTICLE_COUNT = 60;
+const PARTICLE_COUNT_DESKTOP = 60;
+const PARTICLE_COUNT_MOBILE = 30;
+const MOBILE_BREAKPOINT = 768;
 const MAX_LINE_DISTANCE = 120;
 const PARTICLE_SPEED = 0.15;
 const ACCENT_RATIO = 0.12;
+const MAX_DEVICE_PIXEL_RATIO = 2;
 
 interface Particle {
   x: number;
@@ -15,8 +18,8 @@ interface Particle {
   accent: boolean;
 }
 
-function createParticles(width: number, height: number): Particle[] {
-  return Array.from({ length: PARTICLE_COUNT }, () => ({
+function createParticles(width: number, height: number, count: number): Particle[] {
+  return Array.from({ length: count }, () => ({
     x: Math.random() * width,
     y: Math.random() * height,
     vx: (Math.random() - 0.5) * PARTICLE_SPEED,
@@ -94,30 +97,57 @@ export function ParticleBackground() {
       animationFrame = requestAnimationFrame(step);
     }
 
+    function startLoop() {
+      if (prefersReducedMotion || animationFrame) return;
+      animationFrame = requestAnimationFrame(step);
+    }
+
+    function stopLoop() {
+      if (animationFrame) {
+        cancelAnimationFrame(animationFrame);
+        animationFrame = 0;
+      }
+    }
+
     function resize() {
       if (!ctx) return;
       const rect = canvas!.getBoundingClientRect();
       width = rect.width;
       height = rect.height;
-      const dpr = window.devicePixelRatio || 1;
+      const dpr = Math.min(window.devicePixelRatio || 1, MAX_DEVICE_PIXEL_RATIO);
       canvas!.width = width * dpr;
       canvas!.height = height * dpr;
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-      particles = createParticles(width, height);
+      const particleCount =
+        width < MOBILE_BREAKPOINT ? PARTICLE_COUNT_MOBILE : PARTICLE_COUNT_DESKTOP;
+      particles = createParticles(width, height, particleCount);
       if (prefersReducedMotion) drawFrame();
     }
 
     resize();
-    if (!prefersReducedMotion) {
-      animationFrame = requestAnimationFrame(step);
-    }
 
     const resizeObserver = new ResizeObserver(() => resize());
     resizeObserver.observe(parent);
 
+    let intersectionObserver: IntersectionObserver | undefined;
+    if (!prefersReducedMotion) {
+      intersectionObserver = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            startLoop();
+          } else {
+            stopLoop();
+          }
+        },
+        { threshold: 0 }
+      );
+      intersectionObserver.observe(canvas);
+    }
+
     return () => {
-      cancelAnimationFrame(animationFrame);
+      stopLoop();
       resizeObserver.disconnect();
+      intersectionObserver?.disconnect();
     };
   }, []);
 
