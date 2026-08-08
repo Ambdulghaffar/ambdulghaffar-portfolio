@@ -10,7 +10,7 @@
   (`components.json`). Primitives (`Button`, `Dialog`, `Sheet`, `DropdownMenu`...) use base-ui's
   `render={<X />}` / `nativeButton={false}` pattern, not Radix's `asChild`. Do not reinstall Radix
   primitives on top.
-- `next-themes` for dark/light mode (`attribute="class"`, `defaultTheme="system"`).
+- `next-themes` for dark/light mode (`attribute="class"`, `defaultTheme="dark"`).
 - Next.js 16 replaces `middleware.ts` with `src/proxy.ts` — that's the file to use for anything
   related to locale negotiation / proxying.
 

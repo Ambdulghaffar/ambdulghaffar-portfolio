@@ -42,7 +42,7 @@ export default async function GlobalNotFound() {
         />
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
         >
