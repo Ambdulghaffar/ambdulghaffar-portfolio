@@ -6,6 +6,7 @@ import { ChevronDown, ChevronUp } from "lucide-react";
 
 import { ProjectCard } from "@/components/project-card";
 import { Button } from "@/components/ui/button";
+import { Reveal } from "@/components/reveal";
 import type { Locale, Project } from "@/types";
 
 const INITIAL_VISIBLE_COUNT = 6;
@@ -41,8 +42,10 @@ export function ProjectsGrid({ projects, locale, labels }: ProjectsGridProps) {
   return (
     <div>
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {visibleProjects.map((project) => (
-          <ProjectCard key={project.id} project={project} locale={locale} labels={labels} />
+        {visibleProjects.map((project, index) => (
+          <Reveal key={project.id} delay={Math.min(index * 0.1, 0.5)}>
+            <ProjectCard project={project} locale={locale} labels={labels} />
+          </Reveal>
         ))}
 
         <AnimatePresence>

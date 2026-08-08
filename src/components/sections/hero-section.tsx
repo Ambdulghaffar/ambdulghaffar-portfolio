@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { StatItem } from "@/components/stat-item";
 import { SocialLinks } from "@/components/social-links";
 import { RoleTypewriter } from "@/components/role-typewriter";
+import { Reveal } from "@/components/reveal";
 import { Link } from "@/i18n/navigation";
 import profile from "@/data/profile.json";
 import type { Locale, Profile } from "@/types";
@@ -25,7 +26,7 @@ export async function HeroSection({ locale }: { locale: Locale }) {
   return (
     <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 sm:py-28 lg:px-8 ">
       <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
-        <div className="flex flex-col items-start gap-6">
+        <Reveal className="flex flex-col items-start gap-6">
           <p className="text-sm font-semibold tracking-[0.2em] text-muted-foreground uppercase">
             {t("eyebrow")}
           </p>
@@ -74,9 +75,9 @@ export async function HeroSection({ locale }: { locale: Locale }) {
           </div>
 
           <SocialLinks socials={data.socials} />
-        </div>
+        </Reveal>
 
-        <div className="hidden lg:flex lg:justify-center lg:items-center">
+        <Reveal delay={0.15} className="hidden lg:flex lg:justify-center lg:items-center">
           <div className="relative aspect-4/3 w-full max-w-md overflow-hidden rounded-2xl bg-muted transition-transform duration-300 ease-out hover:scale-105 hover:rotate-2">
             {data.photoUrl ? (
               <Image
@@ -95,7 +96,7 @@ export async function HeroSection({ locale }: { locale: Locale }) {
               </div>
             )}
           </div>
-        </div>
+        </Reveal>
       </div>
     </section>
   );

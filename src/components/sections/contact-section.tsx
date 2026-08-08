@@ -5,6 +5,7 @@ import { Card } from "@/components/ui/card";
 import { ContactForm } from "@/components/contact-form";
 import { CopyEmailButton } from "@/components/copy-email-button";
 import { SocialLinks } from "@/components/social-links";
+import { Reveal } from "@/components/reveal";
 import profile from "@/data/profile.json";
 import type { Locale, Profile } from "@/types";
 
@@ -29,51 +30,55 @@ export async function ContactSection({ locale }: { locale: Locale }) {
       </div>
 
       <div className="mx-auto mt-12 grid max-w-4xl grid-cols-1 gap-6 lg:grid-cols-2">
-        <Card className="p-6">
-          <ContactForm />
-        </Card>
+        <Reveal>
+          <Card className="p-6">
+            <ContactForm />
+          </Card>
+        </Reveal>
 
-        <Card className="gap-5 p-6">
-          <p className="font-heading text-xl font-bold text-foreground">{t("infoTitle")}</p>
-          <p className="text-sm text-muted-foreground">{t("description")}</p>
+        <Reveal delay={0.1}>
+          <Card className="gap-5 p-6">
+            <p className="font-heading text-xl font-bold text-foreground">{t("infoTitle")}</p>
+            <p className="text-sm text-muted-foreground">{t("description")}</p>
 
-          <ul className="flex flex-col gap-3">
-            {infoRows.map(({ icon: Icon, text }, i) => (
-              <li
-                key={i}
-                className="flex items-center gap-3 text-sm font-medium text-foreground"
-              >
-                <span className="flex size-8 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
-                  <Icon className="size-4" aria-hidden="true" />
+            <ul className="flex flex-col gap-3">
+              {infoRows.map(({ icon: Icon, text }, i) => (
+                <li
+                  key={i}
+                  className="flex items-center gap-3 text-sm font-medium text-foreground"
+                >
+                  <span className="flex size-8 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
+                    <Icon className="size-4" aria-hidden="true" />
+                  </span>
+                  {text}
+                </li>
+              ))}
+            </ul>
+
+            <div className="h-px w-full bg-border" />
+
+            <div className="flex items-center justify-between gap-3">
+              <div className="flex min-w-0 flex-col">
+                <span className="text-xs font-semibold tracking-wide text-muted-foreground uppercase">
+                  {t("email")}
                 </span>
-                {text}
-              </li>
-            ))}
-          </ul>
-
-          <div className="h-px w-full bg-border" />
-
-          <div className="flex items-center justify-between gap-3">
-            <div className="flex min-w-0 flex-col">
-              <span className="text-xs font-semibold tracking-wide text-muted-foreground uppercase">
-                {t("email")}
-              </span>
-              <span className="truncate text-sm font-medium text-foreground">{data.email}</span>
+                <span className="truncate text-sm font-medium text-foreground">{data.email}</span>
+              </div>
+              <CopyEmailButton
+                email={data.email}
+                copyLabel={t("copy")}
+                copiedLabel={t("copied")}
+              />
             </div>
-            <CopyEmailButton
-              email={data.email}
-              copyLabel={t("copy")}
-              copiedLabel={t("copied")}
-            />
-          </div>
 
-          <div className="h-px w-full bg-border" />
+            <div className="h-px w-full bg-border" />
 
-          <div className="flex flex-col gap-3">
-            <span className="text-sm font-semibold text-foreground">{t("findMeOn")}</span>
-            <SocialLinks socials={data.socials} />
-          </div>
-        </Card>
+            <div className="flex flex-col gap-3">
+              <span className="text-sm font-semibold text-foreground">{t("findMeOn")}</span>
+              <SocialLinks socials={data.socials} />
+            </div>
+          </Card>
+        </Reveal>
       </div>
     </section>
   );

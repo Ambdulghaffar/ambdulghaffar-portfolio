@@ -1,9 +1,9 @@
 "use client";
 
-import { motion } from "motion/react";
 import { Briefcase, GraduationCap } from "lucide-react";
 
 import { Card } from "@/components/ui/card";
+import { Reveal } from "@/components/reveal";
 import { cn } from "@/lib/utils";
 
 export interface TimelineEntry {
@@ -25,13 +25,7 @@ export function TimelineItem({ item, index }: TimelineItemProps) {
   const Icon = item.type === "experience" ? Briefcase : GraduationCap;
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 24 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-80px" }}
-      transition={{ duration: 0.5, ease: "easeOut" }}
-      className="relative grid grid-cols-1 gap-2 pl-12 lg:grid-cols-[1fr_auto_1fr] lg:items-center lg:gap-8 lg:pl-0"
-    >
+    <Reveal className="relative grid grid-cols-1 gap-2 pl-12 lg:grid-cols-[1fr_auto_1fr] lg:items-center lg:gap-8 lg:pl-0">
       <div
         className={cn(
           "text-sm font-bold text-primary",
@@ -60,6 +54,6 @@ export function TimelineItem({ item, index }: TimelineItemProps) {
           )}
         </Card>
       </div>
-    </motion.div>
+    </Reveal>
   );
 }

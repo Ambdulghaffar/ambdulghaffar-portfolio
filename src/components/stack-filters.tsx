@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 
 import { Button } from "@/components/ui/button";
 import { SkillCard } from "@/components/skill-card";
+import { Reveal } from "@/components/reveal";
 import type { SkillLevel, StackItem } from "@/types";
 
 interface LocalizedCategory {
@@ -57,8 +58,10 @@ export function StackFilters({ categories, filters, levelLabels }: StackFiltersP
               {category.label}
             </h3>
             <div className="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-              {category.items.map((item) => (
-                <SkillCard key={item.name} item={item} levelLabel={levelLabels[item.level]} />
+              {category.items.map((item, index) => (
+                <Reveal key={item.name} delay={Math.min(index * 0.05, 0.5)}>
+                  <SkillCard item={item} levelLabel={levelLabels[item.level]} />
+                </Reveal>
               ))}
             </div>
           </div>

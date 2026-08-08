@@ -3,6 +3,7 @@ import { Download } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { SocialLinks } from "@/components/social-links";
+import { Reveal } from "@/components/reveal";
 import { Link } from "@/i18n/navigation";
 import profile from "@/data/profile.json";
 import type { Locale, Profile } from "@/types";
@@ -29,7 +30,7 @@ export async function Footer({ locale }: { locale: Locale }) {
     <footer className="border-t border-border/60 bg-card">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-3">
-          <div className="flex flex-col items-start gap-4">
+          <Reveal className="flex flex-col items-start gap-4">
             <span className="font-heading text-lg font-semibold tracking-tight">
               {data.name}
             </span>
@@ -44,9 +45,9 @@ export async function Footer({ locale }: { locale: Locale }) {
               <Download data-icon="inline-start" />
               {h("downloadCv")}
             </Button>
-          </div>
+          </Reveal>
 
-          <div className="flex flex-col gap-4">
+          <Reveal delay={0.05} className="flex flex-col gap-4">
             <span className="text-xs font-semibold tracking-[0.2em] text-muted-foreground uppercase">
               {t("navigate")}
             </span>
@@ -61,9 +62,9 @@ export async function Footer({ locale }: { locale: Locale }) {
                 </Link>
               ))}
             </nav>
-          </div>
+          </Reveal>
 
-          <div className="flex flex-col gap-4">
+          <Reveal delay={0.1} className="flex flex-col gap-4">
             <span className="text-xs font-semibold tracking-[0.2em] text-muted-foreground uppercase">
               {t("connect")}
             </span>
@@ -72,7 +73,7 @@ export async function Footer({ locale }: { locale: Locale }) {
               <span>{data.email}</span>
               <span>{data.location[locale]}</span>
             </div>
-          </div>
+          </Reveal>
         </div>
 
         <div className="mt-12 flex flex-col items-center gap-2 border-t border-border/60 pt-6 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
