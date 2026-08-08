@@ -51,7 +51,7 @@ export function SocialLinks({ socials, className }: SocialLinksProps) {
             target="_blank"
             rel="noopener noreferrer"
             aria-label={SOCIAL_LABELS[key]}
-            className="flex size-10 items-center justify-center rounded-full bg-muted text-foreground transition-colors hover:bg-primary hover:text-primary-foreground"
+            className="flex size-10 items-center justify-center rounded-full bg-muted text-foreground outline-none transition-colors hover:bg-primary hover:text-primary-foreground focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
           >
             <Icon className="size-4" />
           </a>

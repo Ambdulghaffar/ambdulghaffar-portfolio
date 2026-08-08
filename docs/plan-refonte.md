@@ -27,4 +27,4 @@
 - [x] Build Footer (absent from reference, to design)
 - [x] Build 404 page
 - [ ] Wire all text through next-intl (fr default, en secondary)
-- [ ] Polish: focus states, responsive audit below `xs`, accessibility check
+- [x] Polish: focus states, responsive audit below `xs`, accessibility check

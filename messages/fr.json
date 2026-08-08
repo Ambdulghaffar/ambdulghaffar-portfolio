@@ -142,7 +142,8 @@
     "toggleTheme": "Changer de thème",
     "toggleLanguage": "Changer de langue",
     "menu": "Menu",
-    "backToHome": "Retour à l'accueil"
+    "backToHome": "Retour à l'accueil",
+    "close": "Fermer"
   },
   "NotFound": {
     "title": "Page introuvable",

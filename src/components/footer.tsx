@@ -55,7 +55,7 @@ export async function Footer({ locale }: { locale: Locale }) {
                 <Link
                   key={item.label}
                   href={item.href}
-                  className="w-fit text-sm font-medium text-foreground transition-colors hover:text-primary"
+                  className="w-fit rounded-md text-sm font-medium text-foreground outline-none transition-colors hover:text-primary focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
                 >
                   {item.label}
                 </Link>

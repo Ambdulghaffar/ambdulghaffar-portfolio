@@ -54,11 +54,11 @@ export async function ContactSection({ locale }: { locale: Locale }) {
           <div className="h-px w-full bg-border" />
 
           <div className="flex items-center justify-between gap-3">
-            <div className="flex flex-col">
+            <div className="flex min-w-0 flex-col">
               <span className="text-xs font-semibold tracking-wide text-muted-foreground uppercase">
                 {t("email")}
               </span>
-              <span className="text-sm font-medium text-foreground">{data.email}</span>
+              <span className="truncate text-sm font-medium text-foreground">{data.email}</span>
             </div>
             <CopyEmailButton
               email={data.email}

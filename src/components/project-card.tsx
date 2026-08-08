@@ -67,7 +67,7 @@ export function ProjectCard({ project, locale, labels }: ProjectCardProps) {
         aria-label={`${labels.viewDetails} — ${project.title[locale]}`}
         nativeButton={false}
         render={
-          <Card className="h-full cursor-pointer text-left transition-all duration-300 ease-out hover:-translate-y-1 hover:border-primary hover:shadow-lg" />
+          <Card className="h-full cursor-pointer text-left outline-none transition-all duration-300 ease-out hover:-translate-y-1 hover:border-primary hover:shadow-lg focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background" />
         }
       >
         <ProjectImage

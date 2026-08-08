@@ -22,7 +22,7 @@ export function NavLinks({ navItems }: { navItems: NavItem[] }) {
             key={item.hash}
             href={{ pathname: "/", hash: item.hash }}
             className={cn(
-              "rounded-md px-3 py-1.5 text-base font-semibold text-muted-foreground underline decoration-2 underline-offset-4 decoration-transparent transition-colors hover:text-primary",
+              "rounded-md px-3 py-1.5 text-base font-semibold text-muted-foreground underline decoration-2 underline-offset-4 decoration-transparent outline-none transition-colors hover:text-primary focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background",
               isActive && "text-primary decoration-primary"
             )}
           >

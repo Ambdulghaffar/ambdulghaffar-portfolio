@@ -142,7 +142,8 @@
     "toggleTheme": "Toggle theme",
     "toggleLanguage": "Toggle language",
     "menu": "Menu",
-    "backToHome": "Back to home"
+    "backToHome": "Back to home",
+    "close": "Close"
   },
   "NotFound": {
     "title": "Page not found",

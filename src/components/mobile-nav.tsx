@@ -63,7 +63,7 @@ export function MobileNav({
                   <Link
                     href={{ pathname: "/", hash: item.hash }}
                     className={cn(
-                      "w-fit rounded-md px-2 py-2 text-sm font-medium text-foreground underline decoration-2 underline-offset-4 decoration-transparent transition-colors hover:bg-muted hover:text-primary",
+                      "w-fit rounded-md px-2 py-2 text-sm font-medium text-foreground underline decoration-2 underline-offset-4 decoration-transparent outline-none transition-colors hover:bg-muted hover:text-primary focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background",
                       isActive && "text-primary decoration-primary"
                     )}
                   />
