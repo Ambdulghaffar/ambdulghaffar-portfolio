@@ -26,7 +26,7 @@ export async function HeroSection({ locale }: { locale: Locale }) {
   return (
     <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 sm:py-28 lg:px-8 ">
       <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
-        <Reveal className="flex flex-col items-start gap-6">
+        <Reveal className="order-2 flex flex-col items-start gap-6 lg:order-1">
           <p className="text-sm font-semibold tracking-[0.2em] text-muted-foreground uppercase">
             {t("eyebrow")}
           </p>
@@ -77,15 +77,15 @@ export async function HeroSection({ locale }: { locale: Locale }) {
           <SocialLinks socials={data.socials} />
         </Reveal>
 
-        <Reveal delay={0.15} className="hidden lg:flex lg:justify-center lg:items-center">
-          <div className="relative aspect-4/3 w-full max-w-md overflow-hidden rounded-2xl bg-muted transition-transform duration-300 ease-out hover:scale-105 hover:rotate-2">
+        <Reveal delay={0.15} className="order-1 flex justify-center lg:order-2 lg:items-center">
+          <div className="relative aspect-16/10 w-full max-w-sm overflow-hidden rounded-2xl bg-muted transition-transform duration-300 ease-out lg:aspect-4/3 lg:max-w-md lg:hover:scale-105 lg:hover:rotate-2">
             {data.photoUrl ? (
               <Image
                 src={data.photoUrl}
                 alt={data.name}
                 fill
                 priority
-                sizes="(min-width: 1024px) 28rem, 0px"
+                sizes="(min-width: 1024px) 28rem, 24rem"
                 className="object-cover"
               />
             ) : (
