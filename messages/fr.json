@@ -20,8 +20,9 @@
     "getInTouch": "Me contacter",
     "downloadCv": "Télécharger mon CV",
     "stats": {
-      "experience": "Ans d'expérience",
-      "projects": "Projets réalisés",
+      "codingYears": "Ans de code",
+      "internship": "Mois de stage",
+      "projects": "Projets",
       "frameworks": "Frameworks & outils"
     }
   },
@@ -98,7 +99,7 @@
   },
   "Projects": {
     "title": "Mes projets",
-    "subtitle": "Une sélection de projets sur lesquels j'ai travaillé",
+    "subtitle": "Une sélection de mes réalisations les plus abouties — retrouvez l'ensemble de mes projets sur <github>GitHub</github>.",
     "watchDemo": "Voir la démo",
     "viewDetails": "Voir les détails",
     "techStack": "Stack technique",

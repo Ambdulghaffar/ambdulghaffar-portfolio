@@ -12,11 +12,11 @@ import type { Locale, Profile } from "@/types";
 
 const data = profile as Profile;
 
-/** Placeholder figures — adjust once real numbers are confirmed. */
 const HERO_STATS = [
-  { value: "2+", key: "experience" },
-  { value: "8+", key: "projects" },
-  { value: "5+", key: "frameworks" },
+  { value: "4+", key: "codingYears" },
+  { value: "6", key: "internship" },
+  { value: "7+", key: "projects" },
+  { value: "12+", key: "frameworks" },
 ] as const;
 
 export async function HeroSection({ locale }: { locale: Locale }) {
@@ -44,7 +44,7 @@ export async function HeroSection({ locale }: { locale: Locale }) {
             {data.heroSummary[locale]}
           </p>
 
-          <div className="flex flex-wrap gap-8">
+          <div className="flex flex-wrap gap-6 sm:gap-8">
             {HERO_STATS.map((stat) => (
               <StatItem
                 key={stat.key}

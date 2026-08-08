@@ -20,8 +20,9 @@
     "getInTouch": "Get in touch",
     "downloadCv": "Download my CV",
     "stats": {
-      "experience": "Years Experience",
-      "projects": "Projects Built",
+      "codingYears": "Years Coding",
+      "internship": "Months Internship",
+      "projects": "Projects",
       "frameworks": "Frameworks & Tools"
     }
   },
@@ -98,7 +99,7 @@
   },
   "Projects": {
     "title": "My Projects",
-    "subtitle": "A selection of projects I've worked on",
+    "subtitle": "A selection of my most complete work — check out all my projects on <github>GitHub</github>.",
     "watchDemo": "Watch the demo",
     "viewDetails": "View details",
     "techStack": "Tech Stack",
